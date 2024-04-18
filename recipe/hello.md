@@ -32,6 +32,7 @@ $ source  /etc/bash.bashrc
 $ arm-none-linux-gnueabi-gcc -v
 ```
 - 没问题后重新编译
+- 总之把这个编译库添加到PATH环境
 ```shell
 $ arm-none-linux-gnueabi-gcc -g -o hello ./hello.c
 #在开发板上重新运行
