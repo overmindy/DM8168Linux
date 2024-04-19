@@ -49,3 +49,14 @@ $ ape-get remove **
 $ tar -xvf **.tar
 $ tar -zxvf **.tar.gz
 ```
+
+## 强制重启
+- 如果显卡驱动等没装好，可以强制重启
+- 千万别一直按电源重启，电脑伤害很大
+- 先按顺序按以下几个键
+```
+1.ctrl+alt#一直按着，别送
+2.printscreen/prtsc#F12右边
+3.r e i s u b
+4.松开ctrl+alt
+```
