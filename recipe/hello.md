@@ -4,7 +4,7 @@
 
 ```
 #cutecom发送命令，建立一个文件夹用来练习
-$$ mkdir yourname
+target $ mkdir yourname
 ```
 
 - 在里面自己写好一个heloo
@@ -36,7 +36,7 @@ $ arm-none-linux-gnueabi-gcc -v
 ```shell
 $ arm-none-linux-gnueabi-gcc -g -o hello ./hello.c
 #在开发板上重新运行
-$$ ./hello
+target $ ./hello
 #输出
 Hello,World!
 ```

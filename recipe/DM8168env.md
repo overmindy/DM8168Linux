@@ -32,12 +32,12 @@ $ apt install cutecom
 $ cutecom
 ```
 
-- 启动之后是一个图形化界面的终端，玩过msp430应该都很熟悉了（之后cutecom的发送终端命令以 `$$`开头，和Linux终端区分开来）
+- 启动之后是一个图形化界面的终端，玩过msp430应该都很熟悉了（之后cutecom的发送终端命令以 `target $`开头，和Linux终端区分开来）
 
 ```shell
 #连接电源等，启动开发板，串口终端会发送一堆#字符串和break之类的
 #赶紧随便发送回车，暂停boot启动，再发送以下命令，打印环境变量
-$$ printenv
+target $ printenv
 #输出
 bootargs=console=ttyO2,115200n8 noinitrd ip=192.168.1.21:192.168.1.43:192.168.1.43:255.255.255.0::eth0:off mem=256M rootwait=1 rw ubi.mtd=4,2048 rootfstype=ubifs root=ubi0:rootfs init=/init vram=20M notifyk.vpssm3_sva=0xBEE00000 stdin=serial ddr_mem=1024M
 ```
@@ -60,11 +60,11 @@ $ ifconfig
 
 ```shell
 #restart
-$$ printenv
-$$ setenv bootargs 'console=ttyO2,115200n8 rootwait root=/dev/nfs rw rootftype=jffs2 mem=169M@0x80000000 vram=50M  nfsroot=192.168.1.51:/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs ip=192.168.1.88:192.168.1.51:192.168.1.51:255.255.255.0::eth0:off notifyk.vpssm3_sva=0xBF900000 earlyprintk'
-$$ saveenv
-$$ nand read 0x81000000 0x00580000 0x300000
-$$ bootm 0x81000000
+target $ printenv
+target $ setenv bootargs 'console=ttyO2,115200n8 rootwait root=/dev/nfs rw rootftype=jffs2 mem=169M@0x80000000 vram=50M  nfsroot=192.168.1.51:/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs ip=192.168.1.88:192.168.1.51:192.168.1.51:255.255.255.0::eth0:off notifyk.vpssm3_sva=0xBF900000 earlyprintk'
+target $ saveenv
+target $ nand read 0x81000000 0x00580000 0x300000
+target $ bootm 0x81000000
 ```
 
 - 成功打印ACCEPT

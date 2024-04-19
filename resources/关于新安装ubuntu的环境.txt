@@ -1,0 +1,102 @@
+1. 新安装ubuntu18_64位，ubuntu20_64位。我的x230上，虚拟机配置网络为NAT可以实现虚拟机上网。在我虚拟机，使用桥接连接板子（在“配置适配器”中，我只选择了桥接有线网卡，所以，桥接下无法连接外网）。VMware Workstation15 Player才有上面这个"配置适配器"来选择桥接的网卡。默认情况下，安装好的虚拟机，可以自动桥接wifi网卡。
+
+
+2.挂载与windows的共享文件夹，在虚拟机配置选项打开“共享文件夹”，添加一个windows目录为共享目录。在虚拟机/mnt/hgfs/下出现共享文件夹名字，如vm_share。如果有hgfs，但是空的，可以尝试下面命令：
+     sudo vmhgfs-fuse .host:/vm_share /mnt/hgfs
+【ubuntu18,20上虚拟机开启共享文件夹后，就有vm_share了】
+
+3.解压开发SDK包ezsdk.tar.gz，进入虚拟机的home目录，使用如下命令：sudo tar -zxvf /mnt/hgfs/vm_share/ezsdk.tar.gz
+
+
+4.解压交叉编译工具CodeSourcery.tar.gz，进入虚拟机的home目录，使用如下命令：tar -zxvf /mnt/hgfs/vm_share/CodeSourcery.tar.gz
+
+5.修改为桥接模式，关闭无线网卡，只有有线网卡连接虚拟机。同时插上网线，打开目标板电源，激活有线网卡。右上角检查应该显示：Wired Connected（只要这个connected,可以开无线wifi，windows可以上网）
+
+6.在虚拟机下，ifconfig检查是否有ip地址，没有配置：
+    sudo ifconfig ens33 192.168.1.41
+【Wired Connected后，需要用ifconfig检查IP地址是否还有效】
+
+7. 虚拟机上设置NFS服务输出目录，检查或修改/etc/exports,可以使用
+    sudo gedit /etc/exports
+在最后添加：
+/home/guan/ti-ezsdk_dm816x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs *(rw,nohide,insecure,no_subtree_check,async,no_root_squash)
+(注意，我的ezsdk安装在/home/guan/下，根据需要修改）
+   showmount -e 可以检测输出设置
+【没有exports问题，很可能没有安装nfs服务，需要配置虚拟机上网，sudo apt install nfs-kernel-server,切换NAT,启用wifi】
+8. 虚拟机启动NFS服务：sudo /etc/init.d/nfs-kernel-server restart
+
+9. 目标板上电，在倒计时按回车进入uboot，设置bootargs,读SD卡内核，bootm，
+
+卡死挂NFS文件系统失败！
+
+检查虚拟机1.41无法ping通windows 1.43，但windows的1.43可以ping通1.41
+
+参考制作SD的mksd-ti816x.sh，仅做文件系统的分区，解压一个简单文件系统arago-base文件系统
+完成SD卡的完整启动，配置ip:192.168.1.21,发现可以与虚拟机的1.41互ping
+用busybox挂载文件系统文件夹，Permission denied，没有权限？
+
+busybox mount -o nolock 192.168.1.41:/home/user/ti-ezsdk_dm81
+6x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs/ /home/root/workspace
+mount: 192.168.1.41:/home/user/ti-ezsdk_dm816x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs/ failed, reason given by server: Permission denied
+
+虚拟机下在/etc/exports,在添加一个/home/guan/workspace的输出目录，SD启动目标板后，busybox mount -o nolock 192.168.1.41:/home/guan/ti-ezsdk_dm81
+6x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs/ /home/root/workspace
+可以挂载该目录。
+
+但nfs挂载文件系统仍然有问题？
+
+bootargs需要修改：
+setenv bootargs 'console=ttyO2,115200n8 rootwait root=/dev/nfs rw rootftype=jffs2 mem=169M@0x80000000 vram=50M nfsroot=192.168.1.41:/home/guan/ti-ezsdk_dm816x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs ip=192.168.1.21:192.168.1.43:192.168.1.43:255.255.255.0::eth0:off notifyk.vpssm3_sva=0xBF900000 earlyprintk'
+
+mmc rescan 0
+fatload mmc 0 0x81000000 uImage
+bootm 0x81000000
+
+目标板上电后（有线网卡激活），虚拟机ubuntu18,需要再次配置ip：192.168.1.41
+Wired Connected, ifconfig的ip地址正确！
+
+上电目标板，可以成功挂载nfs文件系统！
+
+可以运行syslink例程！
+
+虚拟机ubuntu18,测试helloworld的编译：
+(1)根据安装位置，设置编译器的路径：
+export PATH=/home/guan/CodeSourcery/Sourcery_G++_Lite/bin:$PATH
+（2）建立hello目录，建立hello.c makefile
+(3)编译，make CROSS_COMPILE=arm-none-linux-gnueabi- ARCH=arm hello
+（4）利用nfs挂载文件系统，在目标板运行！
+
+虚拟机ubuntu18,测试编译syslink例程ex01:
+进入ex01_helloworld目录  cd ti../com../sys../exa../ex01_h.../
+
+make .show  检测路径配置？
+有错，显示运行结果：
+products.mak:60: ../../products.mak/: Not a directory
+make: *** No rule to make target '../../products.mak/'.  Stop.
+
+检查 ../../products.mak, 并根据安装位置，修改！ 其实就是user --> guan（另外，注释了109行，116行，137行，156行，177行，227行）
+该错误是ex01目标下的products.mak第60行，
+    include $(EXBASE)/../../products.mak/
+多出/，删除后，可运行make .show
+
+执行make, 发现错误：
+#
+# Making all ...
+make -C host all
+make[1]: Entering directory '/home/guan/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/examples/ex01_helloworld/host'
+#
+# Making all ...
+make PROFILE=debug app_host
+make[2]: Entering directory '/home/guan/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/examples/ex01_helloworld/host'
+make[2]: *** No rule to make target '/home/user/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h', needed by 'bin/debug/obj/main_host.ov5T'.  Stop.
+make[2]: Leaving directory '/home/guan/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/examples/ex01_helloworld/host'
+makefile:52: recipe for target 'all' failed
+make[1]: *** [all] Error 2
+make[1]: Leaving directory '/home/guan/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/examples/ex01_helloworld/host'
+makefile:43: recipe for target 'all' failed
+make: *** [all] Error 2
+
+host下面的还有原来路径user没有改完？先执行make clean，清除原来的编译。
+再执行make可以完成编译。make install完成安装！目标板可以运行。
+
+【原来ex01_helloworld目录是root权限，可以删除，重新解压】
