@@ -1,10 +1,3 @@
-# 综合课程：DM8168开发指南
-
-- 项目目录生成
-```shell
-tree -a -I '.git|node_modules'
-```
-```
 .
 ├── config.txt
 ├── course_note
@@ -26,11 +19,12 @@ tree -a -I '.git|node_modules'
 ├── list.txt
 ├── README.md
 ├── recipe
-│   ├── 1-Linux.md #Linux系统安装
-│   ├── 2-DM8168env.md #环境安装
-│   ├── 3-hello.md #Hello编译
-│   └── 4-ex04编译.md #ex04编译运行
+│   ├── 1-Linux.md
+│   ├── 2-DM8168env.md
+│   ├── 3-hello.md
+│   └── 4-ex04编译.md
 └── resources
     ├── 关于新安装ubuntu的环境.txt
     └── DM816x_EZ_Software_Developers_Guide.pdf
-```
+
+3 directories, 24 files
