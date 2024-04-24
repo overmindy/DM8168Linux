@@ -1,0 +1,14 @@
+1. alsa02是一个简化版本的调用Linux声卡驱动，实现录音的代码，通过声卡ALSA驱动实现；
+2. qq群上传了alsa_record_dm8168_ezsdk.tar.gz，请在虚拟机中解压参考。其中包含makefile。
+
+3. 关于在虚拟机环境编译alsa02,在目标运行的说明：
+（1）首先，需要明确，我们有两个Linux系统，一个是我们的开发环境，即虚拟机，它有一个文件系统；另外一个是DM8168目标板上运行的Linux系统，它也有一个文件系统。
+（2）凡是Linux系统，其文件系统的结构大体一样，包括根目录（就是/），这个是最顶层；然后是根目录下的各级目录，如/usr,/opt,/home 等等。我们登录Linux系统后的主文件夹，就在/home/user或<用户名>/下。当DM8168目标板用NFS挂载网络文件系统完成启动后，目标板的文件系统根目录，就是对应虚拟机的ti-ezsdk_dm816x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs/。如果是yangbo的虚拟机，这个ezsdk安装在/home/user/下。所以，我们在虚拟机下编译完成的代码，直接复制到ti-ezsdk_dm816x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs/下的对应目录，就可以通过目标板的根目录的对应目录看到，以便测试运行。
+（3）为了运行alsa02，需要更新原来目标板的系统文件libasound.so.2.0.0,即虚拟机下/home/user/ti-ezsdk_dm816x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs/usr/lib/libasound.so.2.0.0，对应DM8168目标板的/usr/lib/libasound.so.2.0.0。该libasound.so.2.0.0原来只有700+KB。
+(4)新的libasound.so.2.0.0有3.1MB，在alsa/lib/下。在qq群文件下载alsa_dm8168.tar.gz，在虚拟机解压后，可以看到alsa目录。
+（5）【这步似乎可以跳过】重新创建软连接：在目标板上，进入/usr/lib,先删除libasound.so.2，这是一个软连接文件，实际指向libasound.so.2.0.0。这其实是Linux解决不同版本文件的升级兼容的一个手段。使用下面命令重新创建软件连接：
+    ln -s libasound.so.2.0.0 libasound.so.2
+（6）替换libasound.so.2.0.0后，再运行alsa02,提示无法打开：/home/user/alsa/share/alsaalsa.conf，解决方法，干脆将解压到虚拟机的alsa目录下所有文件，都复制到目标板的/home/user/下。由于挂载NFS文件系统，在虚拟机下复制到/home/user/ti-ezsdk_dm816x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs/home/user/下即可。如果ezsdk-dm816x-evm-rootfs/home/没有user目录，先创建一个。
+（7）再次运行alsa02,可以完成录音。注意，现在的alsa代码，其采样速率为8000Hz,记录到目标板的alsa_wav.bin文件中。如果要用aplay工具播放该文件，需要设置播放的采样率为8000,参考下面代码：
+     aplay -f dat --rate=8000 alsa_wav.bin
+(-f dat 是采样率48000，双通道立体声，小端模式，16bit的多参数设置简写，所以后面跟一个--rate重新设置采样率符合alsa02的录音格式。)
