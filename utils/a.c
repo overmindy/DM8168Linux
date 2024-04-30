@@ -1,19 +1,12 @@
 #include <stdio.h>
 #include "uniform.h"
-double uniform(double a, double b,long int * seed)
-{
-	double t;
-	*seed = 2045 * (*seed) + 1;
-	*seed = *seed - (*seed / 1048576) * 1048576;
-	t = (*seed) / 1048576.0;
-	t = a + (b - a) * t;
-	return t;
-}
 int main()
 {
-    double a, b, x;
-    int i, j;
-    long int s;
+    long int out[4]={0};
+    printf("%d",sizeof(out));
+    // double a, b, x;
+    // int i, j;
+    // long int s;
     // a = 0.0;
     // b = 1.0;
     // s = 13579;
@@ -26,6 +19,6 @@ int main()
     //     }
     //     printf("\n");
     // }
-    // getchar();
+    getchar();
     return 0;
 }
