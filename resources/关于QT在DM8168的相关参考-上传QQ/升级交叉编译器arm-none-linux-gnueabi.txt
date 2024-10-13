@@ -1,0 +1,40 @@
+https://launchpad.net/gcc-arm-embedded/+download
+工具链下载地址
+
+https://www.jianshu.com/p/fd0103d59d8e
+  -->  各版本arm-gcc区别与安装
+
+https://jingyan.baidu.com/article/eae078276fe0781fec5485e9.html
+  -->  ubuntu如何安装gcc-arm-none-eabi4.9
+
+解压：
+tar -jxvf gcc-arm-none-eabi-4_9-2015q1-20150306-linux.tar.bz2
+
+export PATH=/home/user/gcc-arm-none-eabi-4_9-2015q1/bin:$PATH
+
+工具前缀：arm-none-eabi
+
+版本4.9.3 支持C++11 【qcustomploat编译需要！】
+
+arm-none-linux-gnueabi-ar 【4.3.3】
+错误：cc1plus: error: unrecognized command line option "-std=c++11"
+解决：4.8以下不支持C++11 ！ 有说可以改成“-std=c++0x”,编译仍然有错误：qcustomplot.h:6405: error: 'nullptr' was not declared in this scope
+
+下载、解压arm-none-eabi 【4.9.3】
+在qcustomplot目录下用qmake -makefile生成Makefile,但需要修改编译工具：
+CC   = arm-none-eabi-gcc
+CXX  = arm-none-eabi-g++    --> 有多处需要修改arm-none-linux-gnueabi
+
+但编译仍然有错误：
+../qt-everywhere-opensource-src-4.6.4/include/QtCore/../../src/corelib/global/qglobal.h:261:4: error: #error "Qt has not been ported to this OS - talk to qt-bugs@trolltech.com"
+ #  error "Qt has not been ported to this OS - talk to qt-bugs@trolltech.com"
+
+重新下载arm-none-linux-gnueabi-gcc-4.8.3
+...
+export PATH=/home/user/arm-2014.05/bin:$PATH
+
+更换4.8后，qcustomplot examples可以编译通过并运行，除了case6:setupDateDemo以及case19:setupFinancialDemo编译报错外（QDateTime::currentDateTime().toMSecsSinceEpoch()没有定义，百度一下，好些这个是qt3的函数，qt4取消了）
+
+8168板子测试了case0,case10【实时刷新波形曲线，16-17FPS的样子】
+
+

@@ -1,0 +1,1875 @@
+Archive member included because of file (symbol)
+
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                              bin/release/obj/App.ov5T (SharedRegion_getSRPtr)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+                              bin/release/obj/App.ov5T (Notify_sendEvent)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+                              bin/release/obj/main_host.ov5T (Ipc_control)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (RingIO_destroy)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (RingIOShm_destroy)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (FrameQ_destroy)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (FrameQBufMgr_getHandle)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o) (ClientNotifyMgr_sendForceNotificationMulti)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (HeapMemMP_destroy)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (HeapBufMP_destroy)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o) (GateMP_getKnlHandle)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (SharedRegionDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o) (NotifyDrvUsr_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o) (HeapBufMPDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (IpcDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (FrameQDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o) (FrameQBufMgrDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o) (ClientNotifyMgrDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o) (RingIODrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o) (RingIOShmDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o) (HeapMemMPDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o) (GateMPDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalProcess.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (OsalProcess_getPid)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (GateMutex_create)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (Memory_getMaxDefaultTypeAlign)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(List.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (List_remove)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (String_cmp)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (_GT_setFailureReason)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (NameServer_getHandle)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (MultiProc_self)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (Gate_leaveSystem)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+                              bin/release/obj/main_host.ov5T (SysLink_destroy)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o) (Cache_wbInv)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o) (NameServerDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o) (MultiProcDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o) (TraceDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o) (CacheDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o) (MemoryOS_free)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o) (OsalDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o) (OsalMutex_leave)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (Osal_printf)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (ProcMgr_destroy)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o) (ProcMgrDrvUsr_close)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (FrameQ_isSupportedInterface)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (ListMP_destroy)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (MessageQ_destroy)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o) (ListMPDrv_ioctl)
+/home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o) (MessageQDrv_ioctl)
+/home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+                              /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o (__libc_csu_fini)
+/home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_udivsi3.o)
+                              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (__aeabi_uidivmod)
+/home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_addsubdf3.o)
+                              bin/release/obj/App.ov5T (__aeabi_dadd)
+/home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_muldivdf3.o)
+                              bin/release/obj/App.ov5T (__aeabi_ddiv)
+/home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_dvmd_lnx.o)
+                              /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+
+Allocating common symbols
+Common symbol       size              file
+
+MemoryOS_state      0x10              /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+NameServer_Object   0x4               /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .note.GNU-stack
+                0x00000000        0x0 bin/release/obj/main_host.ov5T
+ .note.GNU-stack
+                0x00000000        0x0 bin/release/obj/App.ov5T
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalProcess.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(List.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_udivsi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_addsubdf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_muldivdf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_dvmd_lnx.o)
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+LOAD bin/release/obj/main_host.ov5T
+LOAD bin/release/obj/App.ov5T
+LOAD /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libpthread.so
+START GROUP
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/lib/libpthread.so.0
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libpthread_nonshared.a
+END GROUP
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc.so
+START GROUP
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/lib/libc.so.6
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/lib/ld-linux.so.3
+END GROUP
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/librt.so
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/lib/libgcc_s.so
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc.so
+START GROUP
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/lib/libc.so.6
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/lib/ld-linux.so.3
+END GROUP
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/lib/libgcc_s.so
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+LOAD /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+                0x00008000                PROVIDE (__executable_start, 0x8000)
+                0x00008134                . = (0x8000 + SIZEOF_HEADERS)
+
+.interp         0x00008134       0x13
+ *(.interp)
+ .interp        0x00008134       0x13 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.note.ABI-tag   0x00008148       0x20
+ .note.ABI-tag  0x00008148       0x20 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x00008168      0x150
+ *(.hash)
+ .hash          0x00008168      0x150 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x000082b8      0x2d0
+ *(.dynsym)
+ .dynsym        0x000082b8      0x2d0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.dynstr         0x00008588      0x1f4
+ *(.dynstr)
+ .dynstr        0x00008588      0x1f4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.gnu.version    0x0000877c       0x5a
+ *(.gnu.version)
+ .gnu.version   0x0000877c       0x5a /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.gnu.version_d  0x000087d8        0x0 load address 0x000087d6
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.gnu.version_r  0x000087d8       0x60
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x000087d8       0x60 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.rel.dyn        0x00008838       0x18
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00008838       0x18 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.rel.ifunc.dyn
+ *(.rel.ifunc.*)
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rela.ifunc.dyn
+ *(.rela.ifunc.*)
+
+.rel.plt        0x00008850      0x138
+ *(.rel.plt)
+ .rel.plt       0x00008850      0x138 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x00008988        0xc
+ *(.init)
+ .init          0x00008988        0x8 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+                0x00008988                _init
+ .init          0x00008990        0x4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+
+.plt            0x00008994      0x1e8
+ *(.plt)
+ .plt           0x00008994      0x1e8 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+                0x000089a8                open@@GLIBC_2.4
+                0x000089b4                mmap@@GLIBC_2.4
+                0x000089c0                abort@@GLIBC_2.4
+                0x000089cc                pthread_exit@@GLIBC_2.4
+                0x000089d8                __libc_start_main@@GLIBC_2.4
+                0x000089f0                vsprintf@@GLIBC_2.4
+                0x000089fc                getenv@@GLIBC_2.4
+                0x00008a08                putchar@@GLIBC_2.4
+                0x00008a14                sem_init@@GLIBC_2.4
+                0x00008a20                memset@@GLIBC_2.4
+                0x00008a2c                sem_destroy@@GLIBC_2.4
+                0x00008a38                perror@@GLIBC_2.4
+                0x00008a44                usleep@@GLIBC_2.4
+                0x00008a50                free@@GLIBC_2.4
+                0x00008a5c                read@@GLIBC_2.4
+                0x00008a68                scanf@@GLIBC_2.4
+                0x00008a74                pthread_mutex_unlock@@GLIBC_2.4
+                0x00008a80                ioctl@@GLIBC_2.4
+                0x00008a8c                pthread_mutex_lock@@GLIBC_2.4
+                0x00008a98                pthread_create@@GLIBC_2.4
+                0x00008aa4                memcpy@@GLIBC_2.4
+                0x00008ab0                sem_post@@GLIBC_2.4
+                0x00008abc                pthread_sigmask@@GLIBC_2.4
+                0x00008ac8                printf@@GLIBC_2.4
+                0x00008ad4                raise@@GLIBC_2.4
+                0x00008ae0                pthread_mutex_init@@GLIBC_2.4
+                0x00008aec                close@@GLIBC_2.4
+                0x00008af8                malloc@@GLIBC_2.4
+                0x00008b04                sigfillset@@GLIBC_2.4
+                0x00008b10                puts@@GLIBC_2.4
+                0x00008b1c                getpid@@GLIBC_2.4
+                0x00008b28                fcntl@@GLIBC_2.4
+                0x00008b34                munmap@@GLIBC_2.4
+                0x00008b40                sem_wait@@GLIBC_2.4
+                0x00008b4c                exit@@GLIBC_2.4
+                0x00008b58                pthread_self@@GLIBC_2.4
+                0x00008b64                pthread_join@@GLIBC_2.4
+                0x00008b70                getpagesize@@GLIBC_2.4
+
+.text           0x00008b7c    0x2cbb0
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00008b7c       0x38 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+                0x00008b7c                _start
+ .text          0x00008bb4       0x24 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .text          0x00008bd8       0x4c /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .text          0x00008c24      0x2b0 bin/release/obj/main_host.ov5T
+                0x00008c24                main
+ .text          0x00008ed4      0x968 bin/release/obj/App.ov5T
+                0x00008ed4                App_delete
+                0x0000904c                App_exec
+                0x0000969c                App_create
+ .text          0x0000983c     0x2e68 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                0x0000bc30                SharedRegion_getPtr
+                0x0000be08                SharedRegion_setup
+                0x0000a130                SharedRegion_isCacheEnabled
+                0x00009d00                SharedRegion_getRegionInfo
+                0x0000a090                SharedRegion_getNumRegions
+                0x00009e84                SharedRegion_getNumOffsetBits
+                0x0000a3dc                SharedRegion_getEntry
+                0x0000b184                SharedRegion_checkOverlap
+                0x0000a580                SharedRegion_getSRPtr
+                0x0000aedc                SharedRegion_clearEntry
+                0x0000adbc                SharedRegion_getConfig
+                0x000099e8                SharedRegion_clearReservedMemory
+                0x0000aa4c                SharedRegion_stop
+                0x0000b9f4                SharedRegion_destroy
+                0x00009abc                _SharedRegion_setRegions
+                0x0000b7d0                SharedRegion_getIdByName
+                0x0000c234                SharedRegion_reserveMemory
+                0x0000abfc                SharedRegion_getHeap
+                0x0000983c                SharedRegion_invalidSRPtr
+                0x0000ab24                SharedRegion_start
+                0x0000a938                SharedRegion_attach
+                0x0000b39c                SharedRegion_getId
+                0x0000a82c                SharedRegion_detach
+                0x0000a294                SharedRegion_getCacheLineSize
+                0x0000b550                SharedRegion_setEntry
+                0x0000a0e0                SharedRegion_translateEnabled
+                0x00009844                _SharedRegion_clearRegions
+                0x00009f60                SharedRegion_entryInit
+ .text          0x0000c6a4     0x20e8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+                0x0000e654                Notify_getConfig
+                0x0000de84                Notify_registerEventSingle
+                0x0000cb9c                Notify_restore
+                0x0000d370                Notify_sendEvent
+                0x0000c920                Notify_disableEvent
+                0x0000cea8                Notify_intLineRegistered
+                0x0000e184                Notify_sharedMemReq
+                0x0000d618                Notify_unregisterEvent
+                0x0000e4f0                Notify_setup
+                0x0000d8e0                Notify_unregisterEventSingle
+                0x0000d070                Notify_eventAvailable
+                0x0000e414                Notify_destroy
+                0x0000d28c                Notify_detach
+                0x0000e2d0                Notify_attach
+                0x0000db80                Notify_registerEvent
+                0x0000cd1c                Notify_disable
+                0x0000c6a4                Notify_enableEvent
+ .text          0x0000e78c     0x1000 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+                0x0000e800                Ipc_writeConfig
+                0x0000e78c                Ipc_runtimeId
+                0x0000e970                Ipc_control
+                0x0000eacc                Ipc_destroy
+                0x0000f1b0                Ipc_setup
+                0x0000f050                Ipc_getConfig
+                0x0000e8b8                Ipc_readConfig
+ .text          0x0000f78c     0x21c0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                0x000102cc                RingIO_unregisterNotifier
+                0x00011444                RingIO_destroy
+                0x000106dc                RingIO_close
+                0x00011514                RingIO_getConfig
+                0x0000ff98                RingIO_flush
+                0x0001174c                RingIO_setAttribute
+                0x0000fd88                RingIO_getValidSize
+                0x0000ff10                RingIO_sendNotify
+                0x0000f78c                RingIO_sharedMemReq
+                0x000108f0                RingIO_delete
+                0x00010afc                RingIO_openByAddr
+                0x0000fa10                RingIO_getWaterMark
+                0x0001059c                RingIO_Params_init
+                0x0000fbcc                RingIO_getEmptyAttrSize
+                0x0000f8e8                RingIO_release
+                0x0000fb38                RingIO_getAcquiredOffset
+                0x000103fc                RingIO_registerNotifier
+                0x0000fe1c                RingIO_setNotifyType
+                0x00010db4                RingIO_open
+                0x000100f8                RingIO_getvAttribute
+                0x000101a4                RingIO_acquire
+                0x0000fcf4                RingIO_getEmptySize
+                0x0000f97c                RingIO_setWaterMark
+                0x0000f85c                RingIO_cancel
+                0x00011850                RingIO_getAttribute
+                0x00011070                RingIO_create
+                0x0000fc60                RingIO_getValidAttrSize
+                0x00011630                RingIO_setup
+                0x00010044                RingIO_setvAttribute
+                0x0000faa4                RingIO_getAcquiredSize
+ .text          0x0001194c      0x444 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                0x00011c74                RingIOShm_setup
+                0x0001194c                RingIOShm_Params_init
+                0x00011a8c                RingIOShm_destroy
+                0x00011b58                RingIOShm_getConfig
+ .text          0x00011d90     0x4264 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                0x00013e44                FrameQ_freev
+                0x00012a00                FrameQ_sendNotify
+                0x00014084                FrameQ_free
+                0x00015534                FrameQ_close
+                0x00013b00                FrameQ_getv
+                0x00012ffc                FrameQ_registerNotifier
+                0x0001468c                FrameQ_open
+                0x00014250                FrameQ_allocv
+                0x00012d98                FrameQ_unregisterNotifier
+                0x00015898                FrameQ_create
+                0x0001448c                FrameQ_alloc
+                0x00012034                FrameQ_ShMem_Params_init
+                0x000122ac                FrameQ_getvNumFreeFrames
+                0x00012180                FrameQ_control
+                0x00012b80                FrameQ_dup
+                0x00011d90                FrameQ_ShMem_sharedMemReq
+                0x0001263c                FrameQ_getvNumFrames
+                0x00011ee8                FrameQ_Params_init
+                0x00013880                FrameQ_put
+                0x00014ee4                FrameQ_getConfig
+                0x000124b8                FrameQ_getNumFreeFrames
+                0x00013328                FrameQ_get
+                0x00014d80                FrameQ_destroy
+                0x00012824                FrameQ_getNumFrames
+                0x00015000                FrameQ_setup
+                0x000151ec                FrameQ_delete
+                0x00013584                FrameQ_putv
+ .text          0x00015ff4     0x43a8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                0x00016474                FrameQBufMgr_getKnlHandle
+                0x00018b54                FrameQBufMgr_freev
+                0x000169d8                FrameQBufMgr_add
+                0x00019750                FrameQBufMgr_close
+                0x00017b98                FrameQBufMgr_writeBackFrameBuf
+                0x0001605c                FrameQBufMgr_getId
+                0x00016ae4                FrameQBufMgr_translateAddr
+                0x000194a4                FrameQBufMgr_delete
+                0x00016508                FrameQBufMgr_getvNumFreeFrames
+                0x00018854                FrameQBufMgr_dupv
+                0x00016000                FrameQBufMgr_isSupportedBufInterface
+                0x00018094                FrameQBufMgr_allocv
+                0x00019f0c                FrameQBufMgr_destroy
+                0x0001a084                FrameQBufMgr_getConfig
+                0x00016d64                FrameQBufMgr_free
+                0x000171bc                FrameQBufMgr_invalidate
+                0x000160d4                FrameQBufMgr_getHandle
+                0x00016858                FrameQBufMgr_getNumFreeFrames
+                0x000173e4                FrameQBufMgr_writeBack
+                0x00015ff4                FrameQBufMgr_isSupportedInterface
+                0x00016328                FrameQBufMgr_ShMem_Params_init
+                0x0001989c                FrameQBufMgr_create
+                0x000177bc                FrameQBufMgr_writeBackHeaderBuf
+                0x0001601c                FrameQBufMgr_getBaseHeaderSize
+                0x00017dcc                FrameQBufMgr_dup
+                0x00016f9c                FrameQBufMgr_alloc
+                0x00018600                FrameQBufMgr_registerNotifier
+                0x00017964                FrameQBufMgr_invalidateFrameBuf
+                0x0001a1ac                FrameQBufMgr_setup
+                0x00016714                FrameQBufMgr_remove
+                0x000161d0                FrameQBufMgr_Params_init
+                0x00018420                FrameQBufMgr_unregisterNotifier
+                0x000175fc                FrameQBufMgr_invalidateHeaderBuf
+                0x00018e70                FrameQBufMgr_open
+ .text          0x0001a39c     0x2f54 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                0x0001b284                ClientNotifyMgr_sendNotification
+                0x0001a39c                ClientNotifyMgr_sendForceNotificationMulti
+                0x0001c07c                ClientNotifyMgr_close
+                0x0001a6b4                ClientNotifyMgr_disableNotification
+                0x0001c278                ClientNotifyMgr_sharedMemReq
+                0x0001c36c                ClientNotifyMgr_create
+                0x0001ca88                ClientNotifyMgr_destroy
+                0x0001ced4                ClientNotifyMgr_callBack
+                0x0001ccc4                ClientNotifyMgr_setup
+                0x0001ca48                ClientNotifyMgr_sharedMemModReq
+                0x0001aa94                ClientNotifyMgr_sendNotificationMulti
+                0x0001b694                ClientNotifyMgr_unregisterClient
+                0x0001cb94                ClientNotifyMgr_getConfig
+                0x0001a89c                ClientNotifyMgr_enableNotification
+                0x0001afe8                ClientNotifyMgr_sendForceNotification
+                0x0001c12c                ClientNotifyMgr_Params_init
+                0x0001bd48                ClientNotifyMgr_delete
+                0x0001b964                ClientNotifyMgr_registerClient
+                0x0001c944                ClientNotifyMgr_open
+ .text          0x0001d2f0     0x1f08 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                0x0001e53c                HeapMemMP_getConfig
+                0x0001de48                HeapMemMP_getStats
+                0x0001eed0                HeapMemMP_create
+                0x0001dc98                HeapMemMP_getExtendedStats
+                0x0001d79c                _HeapMemMP_create
+                0x0001d2f0                HeapMemMP_getKnlHandle
+                0x0001e42c                HeapMemMP_setup
+                0x0001e358                HeapMemMP_destroy
+                0x0001d660                HeapMemMP_Params_init
+                0x0001e658                HeapMemMP_getUsrHandle
+                0x0001d8d0                HeapMemMP_close
+                0x0001d440                HeapMemMP_sharedMemReq
+                0x0001d570                HeapMemMP_restore
+                0x0001dab4                HeapMemMP_delete
+                0x0001dff8                HeapMemMP_free
+                0x0001e1c0                HeapMemMP_alloc
+                0x0001e8a4                HeapMemMP_openByAddr
+                0x0001ebb8                HeapMemMP_open
+ .text          0x0001f1f8     0x1cbc /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                0x00020b98                HeapBufMP_create
+                0x0001f670                HeapBufMP_close
+                0x00020874                HeapBufMP_openByAddr
+                0x0001f53c                HeapBufMP_sharedMemReq
+                0x0001f480                HeapBufMP_isBlocking
+                0x0001fbf4                HeapBufMP_getStats
+                0x00020254                HeapBufMP_destroy
+                0x00020328                HeapBufMP_setup
+                0x0001f1f8                _HeapBufMP_create
+                0x000200b8                HeapBufMP_alloc
+                0x0002043c                HeapBufMP_getConfig
+                0x0001fda8                HeapBufMP_Params_init
+                0x0001f858                HeapBufMP_delete
+                0x0001f330                HeapBufMP_getKnlHandle
+                0x0001fee8                HeapBufMP_free
+                0x00020558                HeapBufMP_open
+                0x0001fa3c                HeapBufMP_getExtendedStats
+ .text          0x00020eb4     0x1820 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+                0x000223dc                GateMP_getConfig
+                0x0002115c                GateMP_getDefaultRemote
+                0x000212dc                GateMP_enter
+                0x00021434                GateMP_Instance_finalize
+                0x00022240                GateMP_setup
+                0x00022508                GateMP_delete
+                0x0002194c                GateMP_openByAddr
+                0x00021d68                GateMP_Instance_init
+                0x000210b4                GateMP_getSharedAddr
+                0x00021718                GateMP_close
+                0x00021464                GateMP_Params_init
+                0x00021b5c                GateMP_open
+                0x00020ff0                GateMP_getLocalProtect
+                0x00021e7c                _GateMP_create
+                0x0002120c                GateMP_sharedMemReq
+                0x000215b4                GateMP_leave
+                0x00020fb4                GateMP_getRemoteProtect
+                0x00021f40                GateMP_create
+                0x00020eb4                GateMP_getKnlHandle
+                0x0002210c                GateMP_destroy
+                0x0002102c                GateMP_setReserved
+ .text          0x000226d4      0x458 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+                0x000226d4                SharedRegionDrv_ioctl
+                0x00022944                SharedRegionDrv_close
+                0x00022a0c                SharedRegionDrv_open
+ .text          0x00022b2c      0x5e0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+                0x00022b2c                _NotifyDrvUsr_eventWorker
+                0x00022d64                NotifyDrvUsr_close
+                0x00022c78                NotifyDrvUsr_ioctl
+                0x00022eac                NotifyDrvUsr_open
+ .text          0x0002310c      0x320 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+                0x000232b4                HeapBufMPDrv_open
+                0x0002310c                HeapBufMPDrv_ioctl
+                0x000231ec                HeapBufMPDrv_close
+ .text          0x0002342c      0x314 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+                0x000235d4                IpcDrv_open
+                0x0002342c                IpcDrv_ioctl
+                0x0002350c                IpcDrv_close
+ .text          0x00023740      0x2c4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+                0x00023740                FrameQDrv_ioctl
+                0x000238e8                FrameQDrv_open
+                0x00023820                FrameQDrv_close
+ .text          0x00023a04      0x2c4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+                0x00023bac                FrameQBufMgrDrv_open
+                0x00023ae4                FrameQBufMgrDrv_close
+                0x00023a04                FrameQBufMgrDrv_ioctl
+ .text          0x00023cc8      0x2c4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+                0x00023e70                ClientNotifyMgrDrv_open
+                0x00023cc8                ClientNotifyMgrDrv_ioctl
+                0x00023da8                ClientNotifyMgrDrv_close
+ .text          0x00023f8c      0x2c4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+                0x0002406c                RingIODrv_close
+                0x00023f8c                RingIODrv_ioctl
+                0x00024134                RingIODrv_open
+ .text          0x00024250      0x2c4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+                0x00024250                RingIOShmDrv_ioctl
+                0x00024330                RingIOShmDrv_close
+                0x000243f8                RingIOShmDrv_open
+ .text          0x00024514      0x2cc /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+                0x000245f4                HeapMemMPDrv_close
+                0x00024514                HeapMemMPDrv_ioctl
+                0x000246bc                HeapMemMPDrv_open
+ .text          0x000247e0      0x2cc /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+                0x00024988                GateMPDrv_open
+                0x000248c0                GateMPDrv_close
+                0x000247e0                GateMPDrv_ioctl
+ .text          0x00024aac        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalProcess.o)
+                0x00024aac                OsalProcess_getTid
+                0x00024ab0                OsalProcess_getPid
+ .text          0x00024ab4      0x4b4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+                0x00024ab4                GateMutex_leave
+                0x00024e54                GateMutex_delete
+                0x00024d14                GateMutex_create
+                0x00024b48                GateMutex_enter
+                0x00024c54                GateMutex_Instance_init
+                0x00024be8                GateMutex_Instance_finalize
+ .text          0x00024f68      0x774 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+                0x00024f68                Memory_getMaxDefaultTypeAlign
+                0x000253cc                Memory_getStats
+                0x00024f70                Memory_translate
+                0x00025220                Memory_valloc
+                0x000255b0                Memory_calloc
+                0x000250b8                Memory_alloc
+                0x00024fd8                Memory_query
+                0x000254b0                Memory_free
+ .text          0x000256dc     0x1134 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(List.o)
+                0x00026424                List_get
+                0x00025e04                List_construct
+                0x0002653c                List_put
+                0x000260d0                List_insert
+                0x00025eb4                List_Params_init
+                0x0002601c                List_destruct
+                0x00026364                List_create
+                0x0002623c                List_delete
+                0x00025940                List_remove
+                0x00025a6c                List_dequeue
+                0x00025f54                List_empty
+                0x00025c80                List_next
+                0x0002580c                List_enqueue
+                0x00025d54                List_elemClear
+                0x000256dc                List_enqueueHead
+                0x00025b44                List_prev
+                0x000266a8                List_putHead
+ .text          0x00026810      0x34c /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+                0x00026ad0                String_hash
+                0x00026990                String_cpy
+                0x00026844                String_cmp
+                0x00026928                String_ncmp
+                0x00026a40                String_hexToStr
+                0x000269ac                String_ncpy
+                0x00026810                String_cat
+                0x00026a0c                String_len
+ .text          0x00026b5c      0x35c /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                0x00026e10                _GT_0trace
+                0x00026c18                _GT_5trace
+                0x00026e4c                _GT_setTrace
+                0x00026dc8                _GT_1trace
+                0x00026c90                _GT_4trace
+                0x00026d00                _GT_3trace
+                0x00026d68                _GT_2trace
+                0x00026b9c                _GT_6trace
+                0x00026b5c                _GT_setFailureReason
+ .text          0x00026eb8     0x24c4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                0x00028b04                NameServer_create
+                0x000273b4                NameServer_match
+                0x00027610                NameServer_getLocal
+                0x00027e08                NameServer_addUInt32
+                0x00027028                NameServer_delete
+                0x00027b48                NameServer_add
+                0x00029064                NameServer_destroy
+                0x000271e4                NameServer_getHandle
+                0x00027914                NameServer_getLocalUInt32
+                0x00029124                NameServer_setup
+                0x00028f1c                NameServer_Params_init
+                0x00028538                NameServer_removeEntry
+                0x000288c8                NameServer_open
+                0x00027fa0                NameServer_get
+                0x00028d44                NameServer_close
+                0x000286f8                NameServer_remove
+                0x00026eb8                NameServer_isRegistered
+                0x000282f8                NameServer_getUInt32
+                0x00029230                NameServer_getConfig
+ .text          0x0002937c      0xa18 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                0x00029864                MultiProc_destroy
+                0x0002937c                MultiProc_self
+                0x000293d0                MultiProc_getNumProcessors
+                0x00029924                MultiProc_setup
+                0x000296ec                MultiProc_setLocalId
+                0x00029420                MultiProc_getName
+                0x00029554                MultiProc_getId
+                0x00029b9c                MultiProc_getSlot
+                0x00029a50                MultiProc_getConfig
+ .text          0x00029d94       0xf8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                0x00029d94                Gate_leaveSystem
+                0x00029dd0                Gate_enterSystem
+ .text          0x00029e8c       0x98 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+                0x00029e8c                SysLink_destroy
+                0x00029ecc                SysLink_setup
+ .text          0x00029f24      0x33c /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+                0x00029fac                Cache_setMode
+                0x00029f24                Cache_wait
+                0x0002a1b0                Cache_inv
+                0x0002a100                Cache_wb
+                0x0002a050                Cache_wbInv
+ .text          0x0002a260      0x2c8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+                0x0002a408                NameServerDrv_open
+                0x0002a340                NameServerDrv_close
+                0x0002a260                NameServerDrv_ioctl
+ .text          0x0002a528      0x298 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+                0x0002a528                MultiProcDrv_ioctl
+                0x0002a5dc                MultiProcDrv_close
+                0x0002a6a4                MultiProcDrv_open
+ .text          0x0002a7c0       0xe8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+                0x0002a7c0                TraceDrv_ioctl
+ .text          0x0002a8a8       0xb0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+                0x0002a8a8                CacheDrv_ioctl
+ .text          0x0002a958     0x120c /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                0x0002afdc                MemoryOS_set
+                0x0002b148                MemoryOS_copy
+                0x0002b73c                MemoryOS_map
+                0x0002ac4c                MemoryOS_setup
+                0x0002add0                MemoryOS_translate
+                0x0002aa10                MemoryOS_alloc
+                0x0002aadc                MemoryOS_destroy
+                0x0002b400                MemoryOS_unmap
+                0x0002b2b0                MemoryOS_calloc
+                0x0002a958                MemoryOS_free
+ .text          0x0002bb64      0x584 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+                0x0002bcd0                OsalDrv_close
+                0x0002bdac                OsalDrv_open
+                0x0002bc58                OsalDrv_unmap
+                0x0002bb64                OsalDrv_ioctl
+                0x0002bee0                OsalDrv_map
+ .text          0x0002c0e8      0x3e0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+                0x0002c29c                OsalMutex_delete
+                0x0002c3ac                OsalMutex_create
+                0x0002c1c4                OsalMutex_enter
+                0x0002c0e8                OsalMutex_leave
+ .text          0x0002c4c8       0x48 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+                0x0002c4c8                Osal_printf
+ .text          0x0002c510     0x38ec /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                0x0002cdc4                ProcMgr_getSymbolAddress
+                0x0002f89c                ProcMgr_destroy
+                0x0002da9c                ProcMgr_unmap
+                0x0002c888                ProcMgr_delete
+                0x0002e9fc                ProcMgr_load
+                0x0002e6ec                ProcMgr_getStartParams
+                0x0002e0c8                ProcMgr_detach
+                0x0002ca80                ProcMgr_getSectionData
+                0x0002fce0                ProcMgr_getConfig
+                0x0002d54c                ProcMgr_start
+                0x0002c510                ProcMgr_getMaxMemoryRegions
+                0x0002c78c                ProcMgr_stop
+                0x0002f1e0                ProcMgr_open
+                0x0002e280                ProcMgr_map
+                0x0002e8f4                ProcMgr_Params_init
+                0x0002d654                ProcMgr_unload
+                0x0002ec60                ProcMgr_attach
+                0x0002d1cc                ProcMgr_read
+                0x0002d75c                ProcMgr_translateAddr
+                0x0002f5b8                ProcMgr_create
+                0x0002c684                ProcMgr_getState
+                0x0002c58c                ProcMgr_getLoadedFileId
+                0x0002e7ec                ProcMgr_getAttachParams
+                0x0002eedc                ProcMgr_close
+                0x0002cfc8                ProcMgr_write
+                0x0002e5dc                ProcMgr_control
+                0x0002d3cc                ProcMgr_getProcInfo
+                0x0002cc38                ProcMgr_getSectionInfo
+                0x0002fbac                ProcMgr_setup
+ .text          0x0002fdfc      0x44c /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+                0x0002fecc                ProcMgrDrvUsr_open
+                0x0002fdfc                ProcMgrDrvUsr_close
+                0x0002fff4                ProcMgrDrvUsr_ioctl
+ .text          0x00030248      0x700 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+                0x000304c4                FrameQ_getNumFrameBuffers
+                0x0003066c                FrameQ_getFrameBufValidSize
+                0x00030294                FrameQ_setFrameBufDataStartOffset
+                0x000303ac                FrameQ_setFrameBufValidSize
+                0x00030854                FrameQ_getFrameBuffer
+                0x00030764                FrameQ_getFrameBufSize
+                0x00030248                FrameQ_isSupportedInterface
+                0x00030574                FrameQ_getFrameBufDataStartOffset
+                0x00030254                FrameQ_getExtendedHeaderPtr
+ .text          0x00030948     0x2010 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                0x00032104                ListMP_getConfig
+                0x00032684                ListMP_create
+                0x00030950                _ListMP_create
+                0x0003130c                ListMP_prev
+                0x00030a0c                ListMP_remove
+                0x00031908                ListMP_close
+                0x00031ff4                ListMP_setup
+                0x00032220                ListMP_open
+                0x00032470                ListMP_openByAddr
+                0x00031ad0                ListMP_delete
+                0x00030948                ListMP_getGate
+                0x00031628                ListMP_getTail
+                0x00031f20                ListMP_destroy
+                0x00030be0                ListMP_insert
+                0x00031ddc                ListMP_Params_init
+                0x0003179c                ListMP_getHead
+                0x00030dfc                ListMP_putTail
+                0x00031498                ListMP_next
+                0x00031ca0                ListMP_sharedMemReq
+                0x00030fd0                ListMP_putHead
+                0x000311a4                ListMP_empty
+ .text          0x00032958     0x1d2c /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                0x000333dc                MessageQ_close
+                0x0003362c                MessageQ_setReplyQueue
+                0x00033d18                MessageQ_staticMsgInit
+                0x00032c84                MessageQ_getQueueId
+                0x00032958                MessageQ_detach
+                0x00033544                MessageQ_setMsgTrace
+                0x00032a08                MessageQ_unregisterHeap
+                0x00034568                MessageQ_getConfig
+                0x00033af0                MessageQ_get
+                0x00032f00                MessageQ_free
+                0x00034458                MessageQ_setup
+                0x00033e18                MessageQ_open
+                0x00033204                MessageQ_put
+                0x000339d8                MessageQ_alloc
+                0x000341c4                MessageQ_create
+                0x00033898                MessageQ_Params_init
+                0x00033750                MessageQ_unblock
+                0x00033070                MessageQ_count
+                0x0003439c                MessageQ_destroy
+                0x00033ff0                MessageQ_delete
+                0x00032af0                MessageQ_attach
+                0x00032d40                MessageQ_registerHeap
+                0x00032bc0                MessageQ_sharedMemReq
+ .text          0x00034684      0x2cc /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+                0x00034764                ListMPDrv_close
+                0x00034684                ListMPDrv_ioctl
+                0x0003482c                ListMPDrv_open
+ .text          0x00034950      0x328 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+                0x00034950                MessageQDrv_ioctl
+                0x00034af8                MessageQDrv_open
+                0x00034a30                MessageQDrv_close
+ .text          0x00034c78       0x70 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+                0x00034c78                __libc_csu_fini
+                0x00034c7c                __libc_csu_init
+ .text          0x00034ce8      0x20c /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_udivsi3.o)
+                0x00034ce8                __udivsi3
+                0x00034ce8                __aeabi_uidiv
+                0x00034ed4                __aeabi_uidivmod
+ .text          0x00034ef4      0x3b8 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_addsubdf3.o)
+                0x00035238                __floatundidf
+                0x000351d0                __floatsidf
+                0x000351ac                __aeabi_ui2d
+                0x000351d0                __aeabi_i2d
+                0x000351ac                __floatunsidf
+                0x00034efc                __subdf3
+                0x0003524c                __floatdidf
+                0x00034f00                __adddf3
+                0x0003524c                __aeabi_l2d
+                0x000351f8                __aeabi_f2d
+                0x00035238                __aeabi_ul2d
+                0x00034ef4                __aeabi_drsub
+                0x000351f8                __extendsfdf2
+                0x00034f00                __aeabi_dadd
+                0x00034efc                __aeabi_dsub
+ .text          0x000352ac      0x470 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_muldivdf3.o)
+                0x000352ac                __muldf3
+                0x00035518                __divdf3
+                0x000352ac                __aeabi_dmul
+                0x00035518                __aeabi_ddiv
+ .text          0x0003571c       0x10 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_dvmd_lnx.o)
+                0x0003571c                __aeabi_idiv0
+                0x0003571c                __aeabi_ldiv0
+ .text          0x0003572c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+ .text          0x0003572c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini           0x0003572c        0x8
+ *(.fini)
+ .fini          0x0003572c        0x4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+                0x0003572c                _fini
+ .fini          0x00035730        0x4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+                0x00035734                PROVIDE (__etext, .)
+                0x00035734                PROVIDE (_etext, .)
+                0x00035734                PROVIDE (etext, .)
+
+.rodata         0x00035734    0x14000
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x00035734        0x4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+                0x00035734                _IO_stdin_used
+ .rodata.str1.4
+                0x00035738      0x243 bin/release/obj/main_host.ov5T
+                                0x244 (size before relaxing)
+ *fill*         0x0003597b        0x1 00
+ .rodata.str1.4
+                0x0003597c      0x3cc bin/release/obj/App.ov5T
+ .rodata.str1.4
+                0x00035d48     0x132b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                               0x1358 (size before relaxing)
+ *fill*         0x00037073        0x1 00
+ .rodata.str1.4
+                0x00037074      0xbf2 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+                                0xc70 (size before relaxing)
+ *fill*         0x00037c66        0x2 00
+ .rodata.str1.4
+                0x00037c68      0x80e /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+                                0x8a0 (size before relaxing)
+ *fill*         0x00038476        0x2 00
+ .rodata.str1.4
+                0x00038478     0x116c /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                               0x1208 (size before relaxing)
+ .rodata.str1.4
+                0x000395e4      0x2c0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                                0x380 (size before relaxing)
+ .rodata.str1.4
+                0x000398a4     0x19de /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                               0x1c64 (size before relaxing)
+ *fill*         0x0003b282        0x2 00
+ .rodata.str1.4
+                0x0003b284     0x192f /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                               0x2018 (size before relaxing)
+ *fill*         0x0003cbb3        0x1 00
+ .rodata.str1.4
+                0x0003cbb4     0x11ee /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                               0x1358 (size before relaxing)
+ *fill*         0x0003dda2        0x2 00
+ .rodata.str1.4
+                0x0003dda4      0xbad /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                                0xd40 (size before relaxing)
+ *fill*         0x0003e951        0x3 00
+ .rodata.str1.4
+                0x0003e954      0x95d /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                                0xce0 (size before relaxing)
+ *fill*         0x0003f2b1        0x3 00
+ .rodata.str1.4
+                0x0003f2b4      0x8e2 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+                                0xa18 (size before relaxing)
+ *fill*         0x0003fb96        0x2 00
+ .rodata.str1.4
+                0x0003fb98      0x2ed /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+                                0x334 (size before relaxing)
+ *fill*         0x0003fe85        0x3 00
+ .rodata.str1.4
+                0x0003fe88      0x3d2 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+                                0x41c (size before relaxing)
+ *fill*         0x0004025a        0x2 00
+ .rodata.str1.4
+                0x0004025c      0x262 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+                                0x2f0 (size before relaxing)
+ *fill*         0x000404be        0x2 00
+ .rodata.str1.4
+                0x000404c0      0x20c /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+                                0x298 (size before relaxing)
+ .rodata.str1.4
+                0x000406cc      0x22f /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+                                0x2a0 (size before relaxing)
+ *fill*         0x000408fb        0x1 00
+ .rodata.str1.4
+                0x000408fc      0x291 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+                                0x304 (size before relaxing)
+ *fill*         0x00040b8d        0x3 00
+ .rodata.str1.4
+                0x00040b90      0x2d8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+                                0x330 (size before relaxing)
+ .rodata.str1.4
+                0x00040e68      0x22f /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+                                0x2a0 (size before relaxing)
+ *fill*         0x00041097        0x1 00
+ .rodata.str1.4
+                0x00041098      0x23e /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+                                0x2c8 (size before relaxing)
+ *fill*         0x000412d6        0x2 00
+ .rodata.str1.4
+                0x000412d8      0x262 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+                                0x2d4 (size before relaxing)
+ *fill*         0x0004153a        0x2 00
+ .rodata.str1.4
+                0x0004153c      0x22f /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+                                0x2a0 (size before relaxing)
+ *fill*         0x0004176b        0x1 00
+ .rodata.str1.4
+                0x0004176c      0x244 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+                                0x260 (size before relaxing)
+ .rodata.str1.4
+                0x000419b0      0x4fb /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+                                0x53c (size before relaxing)
+ *fill*         0x00041eab        0x1 00
+ .rodata.str1.4
+                0x00041eac      0x7e6 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(List.o)
+                                0x884 (size before relaxing)
+ *fill*         0x00042692        0x2 00
+ .rodata        0x00042694      0x400 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .rodata.str1.4
+                0x00042a94       0x11 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+                                 0x14 (size before relaxing)
+ *fill*         0x00042aa5        0x3 00
+ .rodata.str1.4
+                0x00042aa8       0x4f /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                                 0x50 (size before relaxing)
+ *fill*         0x00042af7        0x1 00
+ .rodata.str1.4
+                0x00042af8      0xbfa /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                                0xe34 (size before relaxing)
+ *fill*         0x000436f2        0x2 00
+ .rodata.str1.4
+                0x000436f4      0x5b8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                                0x644 (size before relaxing)
+ .rodata.str1.4
+                0x00043cac       0x87 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                                 0xb8 (size before relaxing)
+ *fill*         0x00043d33        0x1 00
+ .rodata.str1.4
+                0x00043d34       0x67 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+                                 0x68 (size before relaxing)
+ *fill*         0x00043d9b        0x1 00
+ .rodata.str1.4
+                0x00043d9c      0x253 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+                                0x280 (size before relaxing)
+ *fill*         0x00043fef        0x1 00
+ .rodata.str1.4
+                0x00043ff0      0x287 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+                                0x2f8 (size before relaxing)
+ *fill*         0x00044277        0x1 00
+ .rodata.str1.4
+                0x00044278      0x246 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+                                0x288 (size before relaxing)
+ *fill*         0x000444be        0x2 00
+ .rodata.str1.4
+                0x000444c0       0xf0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+                                0x138 (size before relaxing)
+ .rodata.str1.4
+                0x000445b0       0xef /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+                                0x108 (size before relaxing)
+ *fill*         0x0004469f        0x1 00
+ .rodata.str1.4
+                0x000446a0      0x820 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                                0x940 (size before relaxing)
+ .rodata.str1.4
+                0x00044ec0      0x312 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+                                0x3ac (size before relaxing)
+ *fill*         0x000451d2        0x2 00
+ .rodata.str1.4
+                0x000451d4      0x323 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+                                0x360 (size before relaxing)
+ *fill*         0x000454f7        0x1 00
+ .rodata.str1.4
+                0x000454f8        0x3 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+                                  0x4 (size before relaxing)
+ *fill*         0x000454fb        0x1 00
+ .rodata.str1.4
+                0x000454fc     0x1d3f /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                               0x1e88 (size before relaxing)
+ *fill*         0x0004723b        0x1 00
+ .rodata.str1.4
+                0x0004723c      0x320 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+                                0x390 (size before relaxing)
+ .rodata.str1.4
+                0x0004755c      0x5de /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+                                0x620 (size before relaxing)
+ *fill*         0x00047b3a        0x2 00
+ .rodata.str1.4
+                0x00047b3c      0xa2a /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                                0xc20 (size before relaxing)
+ *fill*         0x00048566        0x2 00
+ .rodata.str1.4
+                0x00048568      0xd48 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                                0xfc4 (size before relaxing)
+ .rodata.str1.4
+                0x000492b0      0x22f /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+                                0x2a0 (size before relaxing)
+ *fill*         0x000494df        0x1 00
+ .rodata.str1.4
+                0x000494e0      0x254 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+                                0x2e0 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab      0x00049734       0x18
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab     0x00049734        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .ARM.extab     0x00049734        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .ARM.extab     0x00049734        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .ARM.extab     0x00049734        0x0 bin/release/obj/main_host.ov5T
+ .ARM.extab     0x00049734        0x0 bin/release/obj/App.ov5T
+ .ARM.extab     0x00049734        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+ .ARM.extab     0x00049734        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+ .ARM.extab     0x00049734        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+ .ARM.extab     0x00049734        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+ .ARM.extab     0x00049734        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+ .ARM.extab     0x00049734        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+ .ARM.extab     0x00049734        0xc /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalProcess.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(List.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+ .ARM.extab     0x00049740        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+ .ARM.extab     0x00049740        0xc /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .ARM.extab     0x0004974c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+ .ARM.extab     0x0004974c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+ .ARM.extab     0x0004974c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+ .ARM.extab     0x0004974c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+ .ARM.extab     0x0004974c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+ .ARM.extab     0x0004974c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+ .ARM.extab     0x0004974c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+ .ARM.extab     0x0004974c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .ARM.extab.init
+                0x0004974c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+ .ARM.extab.fini
+                0x0004974c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+                0x0004974c                __exidx_start = .
+
+.ARM.exidx      0x0004974c      0xad8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x0004975c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx     0x0004975c        0x8 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .ARM.exidx     0x00049764        0x8 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+                                 0x10 (size before relaxing)
+ .ARM.exidx     0x0004976c        0x8 bin/release/obj/main_host.ov5T
+ .ARM.exidx     0x00049774       0x20 bin/release/obj/App.ov5T
+ .ARM.exidx     0x00049794       0xa8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                                 0xe0 (size before relaxing)
+ .ARM.exidx     0x0004983c       0x60 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+                                 0x88 (size before relaxing)
+ .ARM.exidx     0x0004989c       0x30 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+                                 0x38 (size before relaxing)
+ .ARM.exidx     0x000498cc       0xb0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                                 0xf0 (size before relaxing)
+ .ARM.exidx     0x0004997c       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                                 0x20 (size before relaxing)
+ .ARM.exidx     0x0004998c       0xd0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                                 0xd8 (size before relaxing)
+ .ARM.exidx     0x00049a5c       0xe8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                                0x110 (size before relaxing)
+ .ARM.exidx     0x00049b44       0x90 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                                 0x98 (size before relaxing)
+ .ARM.exidx     0x00049bd4       0x60 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                                 0x90 (size before relaxing)
+ .ARM.exidx     0x00049c34       0x50 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                                 0x88 (size before relaxing)
+ .ARM.exidx     0x00049c84       0x88 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+                                 0xa8 (size before relaxing)
+ .ARM.exidx     0x00049d0c       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049d1c       0x20 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .ARM.exidx     0x00049d3c       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049d4c       0x18 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .ARM.exidx     0x00049d64        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049d6c       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049d7c       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049d8c       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049d9c       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049dac       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049dbc       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049dcc        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalProcess.o)
+                                 0x10 (size before relaxing)
+ .ARM.exidx     0x00049dd4       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+                                 0x30 (size before relaxing)
+ .ARM.exidx     0x00049de4       0x38 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+                                 0x40 (size before relaxing)
+ .ARM.exidx     0x00049e1c       0x50 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(List.o)
+                                 0x88 (size before relaxing)
+ .ARM.exidx     0x00049e6c       0x38 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+                                 0x40 (size before relaxing)
+ .ARM.exidx     0x00049ea4       0x40 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                                 0x48 (size before relaxing)
+ .ARM.exidx     0x00049ee4       0x60 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                                 0x98 (size before relaxing)
+ .ARM.exidx     0x00049f44       0x40 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                                 0x48 (size before relaxing)
+ .ARM.exidx     0x00049f84        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                                 0x20 (size before relaxing)
+ .ARM.exidx     0x00049f8c        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+                                 0x10 (size before relaxing)
+ .ARM.exidx     0x00049f94       0x18 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+                                 0x28 (size before relaxing)
+ .ARM.exidx     0x00049fac       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049fbc        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x00049fbc        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+                                  0x8 (size before relaxing)
+ .ARM.exidx     0x00049fbc        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+                                  0x8 (size before relaxing)
+ .ARM.exidx     0x00049fbc       0x38 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                                 0x50 (size before relaxing)
+ .ARM.exidx     0x00049ff4       0x20 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+                                 0x28 (size before relaxing)
+ .ARM.exidx     0x0004a014       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+                                 0x20 (size before relaxing)
+ .ARM.exidx     0x0004a024        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .ARM.exidx     0x0004a02c       0x98 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                                 0xe8 (size before relaxing)
+ .ARM.exidx     0x0004a0c4       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x0004a0d4       0x20 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+                                 0x48 (size before relaxing)
+ .ARM.exidx     0x0004a0f4       0x50 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                                 0xa8 (size before relaxing)
+ .ARM.exidx     0x0004a144       0x98 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                                 0xb8 (size before relaxing)
+ .ARM.exidx     0x0004a1dc       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x0004a1ec       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+                                 0x18 (size before relaxing)
+ .ARM.exidx     0x0004a1fc       0x18 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+                                 0x10 (size before relaxing)
+ .ARM.exidx.init
+                0x0004974c       0x10 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.fini
+                0x0004a214       0x10 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+                                  0x8 (size before relaxing)
+                0x0004a224                __exidx_end = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x0004a224        0x4
+ *(.eh_frame)
+ .eh_frame      0x0004a224        0x4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x0004a228                . = (ALIGN (0x8000) - ((0x8000 - .) & 0x7fff))
+                0x00052228                . = (0x8000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x00052228        0x0
+                0x00052228                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x00052228                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x00052228        0x4
+                0x00052228                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00052228        0x4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+                0x0005222c                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0005222c        0x4
+                0x0005222c                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ .fini_array    0x0005222c        0x4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00052230                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x00052230        0x4
+ *(.jcr)
+ .jcr           0x00052230        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .jcr           0x00052230        0x4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00052234      0x100
+ *(.dynamic)
+ .dynamic       0x00052234      0x100 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+                0x00052234                _DYNAMIC
+                0x00052334                . = (. DATA_SEGMENT_RELRO_END 0x0)
+
+.got            0x00052334       0xb4
+ *(.got.plt)
+ .got.plt       0x00052334       0xa8 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+                0x00052334                _GLOBAL_OFFSET_TABLE_
+ *(.got)
+ .got           0x000523dc        0xc /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+
+.data           0x000523e8       0x5c
+                0x000523e8                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000523e8        0x4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+                0x000523e8                data_start
+ .data          0x000523ec        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .data          0x000523ec        0x4 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+                0x000523ec                __dso_handle
+ .data          0x000523f0        0x0 bin/release/obj/main_host.ov5T
+ .data          0x000523f0       0x18 bin/release/obj/App.ov5T
+                0x00052400                s
+                0x000523f0                a_b_s
+ .data          0x00052408        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                0x00052408                SharedRegion_module
+ .data          0x0005240c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+ .data          0x0005240c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+ .data          0x0005240c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+ .data          0x0005240c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+ .data          0x0005240c        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                0x0005240c                FrameQ_module
+ .data          0x00052410        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                0x00052410                FrameQBufMgr_module
+ .data          0x00052414        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                0x00052414                ClientNotifyMgr_module
+ .data          0x00052418        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+ .data          0x00052418        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                0x00052418                HeapBufMP_module
+ .data          0x0005241c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+ .data          0x0005241c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+ .data          0x0005241c        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalProcess.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(List.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .data          0x00052420        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+ .data          0x00052420        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                0x00052420                NameServer_module
+ .data          0x00052424        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                0x00052424                MultiProc_module
+ .data          0x00052428        0xc /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                0x00052430                Gate_systemHandle
+                0x00052428                Gate_systemObject
+ .data          0x00052434        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+ .data          0x00052434        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+ .data          0x00052434        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+ .data          0x00052434        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+ .data          0x00052434        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+ .data          0x00052434        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+ .data          0x00052434        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ .data          0x00052434        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+ .data          0x00052438        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+ .data          0x00052438        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .data          0x00052438        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+ .data          0x00052438        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+ .data          0x0005243c        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+ .data          0x0005243c        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                0x0005243c                ListMP_module
+ .data          0x00052440        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                0x00052440                MessageQ_module
+ .data          0x00052444        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+ .data          0x00052444        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+ .data          0x00052444        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .data          0x00052444        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_udivsi3.o)
+ .data          0x00052444        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_addsubdf3.o)
+ .data          0x00052444        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_muldivdf3.o)
+ .data          0x00052444        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_dvmd_lnx.o)
+ .data          0x00052444        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+ .data          0x00052444        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+
+.data1
+ *(.data1)
+                0x00052444                _edata = .
+                0x00052444                PROVIDE (edata, .)
+                0x00052444                __bss_start = .
+                0x00052444                __bss_start__ = .
+
+.bss            0x00052444    0x2d5fc
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00052444        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .bss           0x00052444        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .bss           0x00052444        0x1 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ *fill*         0x00052445        0x3 00
+ .bss           0x00052448        0x4 bin/release/obj/main_host.ov5T
+ .bss           0x0005244c       0x48 bin/release/obj/App.ov5T
+ .bss           0x00052494      0x120 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                0x00052494                SharedRegion_state
+ .bss           0x000525b4       0x14 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+                0x000525b4                Notify_state
+ .bss           0x000525c8       0x34 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+                0x000525f0                SysLinkCfg_sysMemMap
+                0x000525c8                Ipc_state
+                0x000525f8                SysLink_params
+ .bss           0x000525fc        0xc /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                0x000525fc                RingIO_state
+ .bss           0x00052608        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                0x00052608                RingIOShm_state
+ .bss           0x00052610       0x20 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                0x00052610                FrameQ_module_obj
+ .bss           0x00052630       0x20 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                0x00052630                FrameQBufMgr_module_obj
+ .bss           0x00052650    0x2d024 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                0x00052650                ClientNotifyMgr_module_obj
+ .bss           0x0007f674        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                0x0007f674                HeapMemMP_state
+ .bss           0x0007f678        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                0x0007f678                HeapBufMP_state
+ .bss           0x0007f67c       0x1c /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+ .bss           0x0007f698        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+ .bss           0x0007f6a0        0xc /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .bss           0x0007f6ac        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+ .bss           0x0007f6b4        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .bss           0x0007f6bc        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+ .bss           0x0007f6c4        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+ .bss           0x0007f6cc        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+ .bss           0x0007f6d4        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+ .bss           0x0007f6dc        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+ .bss           0x0007f6e4        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+ .bss           0x0007f6ec        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+ .bss           0x0007f6f4        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalProcess.o)
+ .bss           0x0007f6f4        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+ .bss           0x0007f6f8        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+ .bss           0x0007f6f8        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(List.o)
+ .bss           0x0007f6f8        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .bss           0x0007f6f8        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                0x0007f6f8                curTrace
+ .bss           0x0007f6fc        0xc /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                0x0007f6fc                NameServer_state
+ .bss           0x0007f708      0x298 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                0x0007f708                MultiProc_state
+ .bss           0x0007f9a0       0x18 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                0x0007f9a0                staticMutex
+ .bss           0x0007f9b8        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+ .bss           0x0007f9b8        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+ .bss           0x0007f9b8        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+ .bss           0x0007f9c0        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+ .bss           0x0007f9c8        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+ .bss           0x0007f9c8        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+ .bss           0x0007f9c8       0x18 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ .bss           0x0007f9e0        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+ .bss           0x0007f9e4        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+ .bss           0x0007f9e4        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .bss           0x0007f9e4       0x2c /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                0x0007f9e4                ProcMgr_state
+ .bss           0x0007fa10        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+ .bss           0x0007fa14        0x0 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+ .bss           0x0007fa14        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                0x0007fa14                ListMP_state
+ .bss           0x0007fa18        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                0x0007fa18                MessageQ_state
+ .bss           0x0007fa1c        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+ .bss           0x0007fa24        0x8 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+ .bss           0x0007fa2c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .bss           0x0007fa2c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_udivsi3.o)
+ .bss           0x0007fa2c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x0007fa2c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x0007fa2c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_dvmd_lnx.o)
+ .bss           0x0007fa2c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+ .bss           0x0007fa2c        0x0 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+ *(COMMON)
+ COMMON         0x0007fa2c        0x4 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                0x0007fa2c                NameServer_Object
+ COMMON         0x0007fa30       0x10 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                0x0007fa30                MemoryOS_state
+                0x0007fa40                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0007fa40                _bss_end__ = .
+                0x0007fa40                __bss_end__ = .
+                0x0007fa40                . = ALIGN (0x4)
+                0x0007fa40                . = ALIGN (0x4)
+                0x0007fa40                __end__ = .
+                0x0007fa40                _end = .
+                0x0007fa40                PROVIDE (end, .)
+                0x0007fa40                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x2d /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o
+ .ARM.attributes
+                0x0000002d       0x31 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o
+ .ARM.attributes
+                0x0000005e       0x31 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtbegin.o
+ .ARM.attributes
+                0x0000008f       0x2a bin/release/obj/main_host.ov5T
+ .ARM.attributes
+                0x000000b9       0x2a bin/release/obj/App.ov5T
+ .ARM.attributes
+                0x000000e3       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+ .ARM.attributes
+                0x00000114       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+ .ARM.attributes
+                0x00000145       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+ .ARM.attributes
+                0x00000176       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+ .ARM.attributes
+                0x000001a7       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+ .ARM.attributes
+                0x000001d8       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+ .ARM.attributes
+                0x00000209       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+ .ARM.attributes
+                0x0000023a       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+ .ARM.attributes
+                0x0000026b       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+ .ARM.attributes
+                0x0000029c       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+ .ARM.attributes
+                0x000002cd       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+ .ARM.attributes
+                0x000002fe       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+ .ARM.attributes
+                0x0000032f       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .ARM.attributes
+                0x00000360       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+ .ARM.attributes
+                0x00000391       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .ARM.attributes
+                0x000003c2       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+ .ARM.attributes
+                0x000003f3       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+ .ARM.attributes
+                0x00000424       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+ .ARM.attributes
+                0x00000455       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+ .ARM.attributes
+                0x00000486       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+ .ARM.attributes
+                0x000004b7       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+ .ARM.attributes
+                0x000004e8       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+ .ARM.attributes
+                0x00000519       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalProcess.o)
+ .ARM.attributes
+                0x0000054a       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+ .ARM.attributes
+                0x0000057b       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+ .ARM.attributes
+                0x000005ac       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(List.o)
+ .ARM.attributes
+                0x000005dd       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .ARM.attributes
+                0x0000060e       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+ .ARM.attributes
+                0x0000063f       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+ .ARM.attributes
+                0x00000670       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+ .ARM.attributes
+                0x000006a1       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+ .ARM.attributes
+                0x000006d2       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+ .ARM.attributes
+                0x00000703       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+ .ARM.attributes
+                0x00000734       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+ .ARM.attributes
+                0x00000765       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+ .ARM.attributes
+                0x00000796       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+ .ARM.attributes
+                0x000007c7       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+ .ARM.attributes
+                0x000007f8       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ .ARM.attributes
+                0x00000829       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+ .ARM.attributes
+                0x0000085a       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+ .ARM.attributes
+                0x0000088b       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .ARM.attributes
+                0x000008bc       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+ .ARM.attributes
+                0x000008ed       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+ .ARM.attributes
+                0x0000091e       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+ .ARM.attributes
+                0x0000094f       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+ .ARM.attributes
+                0x00000980       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+ .ARM.attributes
+                0x000009b1       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+ .ARM.attributes
+                0x000009e2       0x31 /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+ .ARM.attributes
+                0x00000a13       0x31 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .ARM.attributes
+                0x00000a44       0x16 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000a5a       0x16 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000a70       0x16 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000a86       0x14 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_dvmd_lnx.o)
+ .ARM.attributes
+                0x00000a9a       0x31 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/crtend.o
+ .ARM.attributes
+                0x00000acb       0x31 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+
+.comment        0x00000000      0x866
+ *(.comment)
+ .comment       0x00000000       0x2b bin/release/obj/main_host.ov5T
+ .comment       0x0000002b       0x2b bin/release/obj/App.ov5T
+ .comment       0x00000056       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+ .comment       0x00000081       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+ .comment       0x000000ac       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+ .comment       0x000000d7       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+ .comment       0x00000102       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+ .comment       0x0000012d       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+ .comment       0x00000158       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+ .comment       0x00000183       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+ .comment       0x000001ae       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+ .comment       0x000001d9       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+ .comment       0x00000204       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+ .comment       0x0000022f       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+ .comment       0x0000025a       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .comment       0x00000285       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+ .comment       0x000002b0       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .comment       0x000002db       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+ .comment       0x00000306       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+ .comment       0x00000331       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+ .comment       0x0000035c       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+ .comment       0x00000387       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+ .comment       0x000003b2       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+ .comment       0x000003dd       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+ .comment       0x00000408       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalProcess.o)
+ .comment       0x00000433       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+ .comment       0x0000045e       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+ .comment       0x00000489       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(List.o)
+ .comment       0x000004b4       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .comment       0x000004df       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+ .comment       0x0000050a       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+ .comment       0x00000535       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+ .comment       0x00000560       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+ .comment       0x0000058b       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+ .comment       0x000005b6       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+ .comment       0x000005e1       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+ .comment       0x0000060c       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+ .comment       0x00000637       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+ .comment       0x00000662       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+ .comment       0x0000068d       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ .comment       0x000006b8       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+ .comment       0x000006e3       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+ .comment       0x0000070e       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .comment       0x00000739       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+ .comment       0x00000764       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+ .comment       0x0000078f       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+ .comment       0x000007ba       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+ .comment       0x000007e5       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+ .comment       0x00000810       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+ .comment       0x0000083b       0x2b /home/elainay/ti-ezsdk_dm816x-evm_5_05_01_04/component-sources/syslink_2_20_00_14/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame    0x00000000       0x64
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x44 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .debug_frame   0x00000044       0x20 /home/elainay/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/libgcc.a(_udivsi3.o)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+OUTPUT(bin/release/app_host elf32-littlearm)

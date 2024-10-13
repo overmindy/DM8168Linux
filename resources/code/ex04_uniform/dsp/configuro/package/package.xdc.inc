@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/configuro.sch
+package/.vers_g180
+package/.vers_r170
+package/.vers_b150
+package/.xdc-y25
+package/configuro.java
+package/configuro.class
+package/package_configuro.c
+package/package.defs.h
+package/configuro.ccs

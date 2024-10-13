@@ -1,0 +1,75 @@
+.
+├── bin
+│   ├── debug
+│   │   ├── obj
+│   │   │   ├── main_dsp.oe674
+│   │   │   ├── server_dsp.xe674.map
+│   │   │   └── Server.oe674
+│   │   └── server_dsp.xe674
+│   └── release
+│       ├── obj
+│       │   ├── main_dsp.oe674
+│       │   ├── server_dsp.xe674.map
+│       │   └── Server.oe674
+│       └── server_dsp.xe674
+├── configuro
+│   ├── compiler.opt
+│   ├── config.bld
+│   ├── custom.mak
+│   ├── .interfaces
+│   ├── .libraries,e674
+│   ├── linker.cmd
+│   ├── package
+│   │   ├── build.cfg
+│   │   ├── cfg
+│   │   │   ├── Dsp_pe674.c
+│   │   │   ├── Dsp_pe674.cfg
+│   │   │   ├── Dsp_pe674.cfg.dot
+│   │   │   ├── Dsp_pe674.cfg.xml
+│   │   │   ├── Dsp_pe674.dep
+│   │   │   ├── Dsp_pe674.h
+│   │   │   ├── Dsp_pe674.mak
+│   │   │   ├── Dsp_pe674.oe674
+│   │   │   ├── Dsp_pe674.oe674.dep
+│   │   │   ├── Dsp_pe674.rov.xs
+│   │   │   ├── Dsp_pe674.rta.xml
+│   │   │   ├── Dsp_pe674.xdc.inc
+│   │   │   ├── Dsp_pe674.xdl
+│   │   │   └── Dsp.xe674.mak
+│   │   ├── configuro.ccs
+│   │   ├── configuro.class
+│   │   ├── configuro.java
+│   │   ├── configuro.pjt
+│   │   ├── configuro.sch
+│   │   ├── external
+│   │   ├── internal
+│   │   ├── lib
+│   │   ├── package.bld.xml
+│   │   ├── package_configuro.c
+│   │   ├── package.defs.h
+│   │   ├── package.xdc.dep
+│   │   ├── package.xdc.inc
+│   │   ├── rel
+│   │   │   ├── configuro.xdc.inc
+│   │   │   └── configuro.xdc.ninc
+│   │   ├── .vers_b150
+│   │   ├── .vers_g180
+│   │   ├── .vers_r170
+│   │   └── .xdc-y25
+│   ├── package.bld
+│   ├── package.mak
+│   ├── package.xdc
+│   ├── package.xs
+│   └── .xdcenv.mak
+├── Dsp.cfg
+├── dsplib
+│   ├── dsplib.cmd
+│   ├── mathlib.ae674
+│   └── sqrtsp.h
+├── list.txt
+├── main_dsp.c
+├── makefile
+├── Server.c
+└── Server.h
+
+13 directories, 59 files

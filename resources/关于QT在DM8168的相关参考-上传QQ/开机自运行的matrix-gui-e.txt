@@ -1,0 +1,30 @@
+ezsdk/example-applications/matrix-gui-e-1.3/是开机自动运行桌面的源文件目录，是一个QT应用代码！
+
+在文件系统的/etc/init.d/matrix-gui-e的脚本文件，通过start-stop-daemon守护进程管理工具来启动！
+
+主要代码：
+
+matrixgui="/usr/bin/matrix_guiE"
+GUI_OPTS="-qws /usr/share/matrix/html/menu_main.html"
+MULTI_OPTS="Multi: LinuxFb:/dev/fb0 LinuxFb:/dev/fb1"
+PIDFILE="/var/run/matrix-gui-e.pid"
+
+test -x "$matrixgui" || exit 0
+
+#export TSLIB_TSDEVICE=/dev/input/touchscreen0
+#export QWS_MOUSE_PROTO=Tslib:/dev/input/touchscreen0
+export QWS_MOUSE_PROTO=Auto:/dev/input/mice
+...
+    echo -n "Starting Matrix GUI application"
+    start-stop-daemon --start --quiet --background --exec $matrixgui -- -display "$MULTI_OPTS" $GUI_OPTS
+	pidof matrix_guiE > $PIDFILE
+    echo "."
+【start-stop-daemon后面是运行参数，而--后面是传递到matrix-guiE的参数 ！】
+
+    echo -n "Stopping Matrix GUI application"
+    start-stop-daemon --stop --quiet --exec $matrixgui
+    echo "."
+【关闭matrix-guiE】
+
+matrix-gui:
+main函数创建web页面窗口

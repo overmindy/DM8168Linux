@@ -1,0 +1,172 @@
+QT的编译：
+
+1. 目前的虚拟机已经安装了qt 4.6.4,相应qt的安装已经完成的。
+2. 为了编译qt的例程，可以将qt目录qt-everywhere-opensource-src-4.6.4移动/home/user/workspace/下。目前生成的makefile包含的qt在改路径下
+3. 添加工具的路径PAHT, 可以先用echo $PATH等检查是否已添加：
+    export PATH=/home/user/CodeSourcery/Sourcery_G++_Lite/bin:$PATH
+或  export PATH=/home/user/arm-2014.05/bin:$PATH
+    export PATH=/home/user/workspace/qt-everywhere-opensource-src-4.6.4/bin:$PATH
+    
+    export QTDIR=/home/user/workspace/qt-everywhere-opensource-src-4.6.4
+    export QTLIB=/home/user/workspace/qt-everywhere-opensource-src-4.6.4/lib
+    export QTINC=/home/user/workspace/qt-everywhere-opensource-src-4.6.4/include
+   第1个是编译工具路径，第2个是qt安装路径，后面3个有些例程要使用吧，也可以都加上。
+4. 进入例程目录，例如/home/user/workspace/qt-everywhere-opensource-src-4.6.4/examples/widgets/digitalclock
+5. 使用ls -all命令检测是否有已经编译的代码，如digitalclock可执行文件，Makefile文件，.moc、.obj、.pch三个临时目录，如下：
+    rm digitalclock
+    rm Makefile
+    rm -rf .moc
+    rm -rf .obj
+    rm -rf .pch
+6.  使用下面命令生成Makefile ,并完成编译例程
+    qmake -projcect   *一般不需要，这个表示生成.pro文件，即QT应用工程配置文件
+    qmake -makefile   生成Makefile
+    make              根据Makefile，完成编译！
+7.  如果修改qt源代码，只需要重修make就可以了。
+8.  如果需要添加其它QT的库，可以直接修改Makefile文件，在INCPATH后添加头文件，LIBS后面添加库，可以参考已经添加的QtGui来实现
+。但正确的方法是修改Makefile生成的产生直接添加对应库。直接修改Makefile是临时办法。
+9.  可以使用下面命令运行： （ 运行QT应用，必须关闭启动时运行的matrix-gui-e应用 ！）
+   /etc/init.d/matrix-gui-e stop
+   ./digitalclock -qws -geometry 320x200+50+20
+
+10. 开发板报错找不到libQtGui.so.4，运行QT例程报错的解决。首先检查开发板的/usr/local/Trolltech/QtEmbedded-4.6.4-arm目录是否存在。如果没有，可以从虚拟机/usr/local/Trolltech/QtEmbedded-4.6.4-arm下复制过去。如果没有对应的目录，就自己建一个。如果我们启动时用的NFS挂载文件系统，那就可以将虚拟机的/usr/local/Trolltech/QtEmbedded-4.6.4-arm复制到ti-ezsdk_dm816x-evm_5_05_01_04/filesystem/ezsdk-dm816x-evm-rootfs/usr/local/Trolltech/QtEmbedded-4.6.4-arm下。这样网络文件系统启动后就有了QT应用支持库。SD卡启动类似操作。 有时需要添加下面的路径：
+     export QTDIR =/usr/local/Trolltech/QtEmbedded-4.6.4-arm
+     export PATH=$QTDIR/:$PATH
+     exprot LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/Trolltech/QtEmbedded-4.6.4-arm/lib    
+
+-------------------------------
+https://blog.csdn.net/kunkliu/article/details/78950813
+----> Qt-configure配置选项，关于qt的配置参数，运行环境的配置！
+
+https://blog.csdn.net/qq_34917736/article/details/77345214    ****
+---> 基于qt的arm与x86两种平台的opencv开发, 关于.pro（项目工程）中的头文件、库文件路径设置！
+
+https://wiki.qt.io/Native_Build_of_Qt5_on_a_Raspberry_Pi
+---> Native Build of Qt5 on a Raspberry Pi
+
+https://www.eefocus.com/toradex/blog/19-07/437561_8e24f.html
+--> 嵌入式 ARM 平台交叉编译Qt5源代码
+
+https://www.cnblogs.com/findumars/p/6375789.html
+---> Qt在各平台上的搭建qt-everywhere（Qt for windows7-64bit, Ubuntu 12.04-32bit, 嵌入式x86平台, 嵌入式arm平台）
+
+https://www.iteye.com/blog/soft-app-925883    ***Build QtCore-4.4-tp1 for arm***
+--->  Qt4 在x86和arm平台上的一些配置 
+
+https://blog.csdn.net/myxuan475/article/details/50560548   ****
+---> 跨平台开发之Qt开发:  指定编译器，工具链(Tools->Options->Build&Run,然后选择qmake，编译器，调试工具);编译哪些文件这就是pro文件的功能;
+
+https://blog.csdn.net/qq_41543888/article/details/106784740?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-7.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-7.no_search_link
+---> C++QT5跨平台界面编程原理--qmake在QtCreator中的使用
+
+https://blog.csdn.net/lvdepeng123/article/details/79007988  ****
+---> qt中qmake的详解:  -project  生成.pro文件
+                       -makefile 生成Makefile文件
+
+
+如果qmake找到.qmake.cache文件，则它将在处理项目文件之前先处理该文件
+
+export QMAKESPEC=qws/linux-x86-g++
+
+重新配置QT：x86的linux
+./configure -platform qws/linux-x86-g++
+make
+make install 
+
+
+./configure -embedded arm -platform qws/linux-x86-g++ -xplatform qws/linux-TIarmv7-g++ -depths 16,24,32 -little-endian -no-mmx -no-3dnow -no-sse -no-sse2 -no-glib -no-cups -no-largefile -no-accessibility -no-openssl -no-gtkstyle -qt-freetype -qt-mouse-pc -qt-mouse-linuxtp -plugin-mouse-linuxtp -plugin-mouse-pc -fast -qt-gfx-transformed -opensource
+
+....
+Creating makefiles. Please wait...
+
+Qt is now configured for building. Just run 'gmake'.
+Once everything is built, you must run 'gmake install'.
+Qt will be installed into /usr/local/Trolltech/QtEmbedded-4.6.4-arm
+
+To reconfigure, run 'gmake confclean' and 'configure'.
+
+----------------------------------------
+libwaveformwidget   --> 一个github的代码
+This library provides a widget for the Qt framework capable of drawing the waveform of an audio file.  
+this library depends on  
+  (1) The Qt framework (tested with v. 4.6, but likely to work with earlier versions)
+  (2) libsndfile (available from http://www.mega-nerd.com/libsndfile) ( https://github.com/libsndfile/libsndfile )
+
+根据readme.txt, src/下是支持库，demo/src/是动态库的qt源码，devel/src/是静态库的qt源码
+先需要编译src下的代码： qmake  --> 根据QT配置生成Makefile（交叉编译arm-none-linux-gnueabi-gcc）
+                        make   --> build, （需要先编译libsndfile支持！） 
+注意，从Makefile文件可以看到，需要-I/usr/include，-lsndfile -L/usr/lib，即libsndfile的头文件存放/usr/include,库文件存放/usr/lib,以及库sndfile
+
+【下面是关于libsndfile的编译: 下载源码libsndfile-1.0.28.tar.gz
+   ./configure -prefix=/home/user/libsndfile --host=arm-linux CC=arm-none-linux-gnueabi-gcc
+   make
+   make install
+执行安装后，sndfile安装在/home/user/libsndfile/ !
+
+*** program/下有例程,sndfile-play,但无法播放wav。 --> 分析sndfile-play.c，发现没有使用alsa音频设备
+configure程序没有发现alsa/asoundlib.h，所以没有定义HAVE_ALSA_ASOUNDLIB_H，无法使用alsa！
+*本EVM板的音频设备/proc/asound/cards
+检测发现libsndfile无alsa/目录!
+
+*解决：https://blog.csdn.net/qq_37990044/article/details/88311424
+---> alsa/asoundlib.h: No such file or directory的解决
+https://blog.csdn.net/u014470361/article/details/84947962
+---> linux ——libsndfile1-dev库移植至嵌入式arm
+
+其实，EZSDK下提供alsa：
+ti-ezsdk_dm816x-evm_5_05_01_04/linux-devkit/arm-none-linux-gnueabi/usr/include/alsa
+/home/user/ti-ezsdk_dm816x-evm_5_05_01_04/linux-devkit/arm-none-linux-gnueabi/usr/lib/alsa-lib
+
+复制include/alsa/到libsndfile，重新配置，再编译！
+./configure -prefix=/home/user/libsndfile --host=arm-linux CC=arm-none-linux-gnueabi-gcc --enable-alsa --disable-external-libs LDFLAGS="-L/home/user/ti-ezsdk_dm816x-evm_5_05_01_04/linux-devkit/arm-none-linux-gnueabi/usr/lib/alsa-lib" CPPFLAGS="-I/home/user/ti-ezsdk_dm816x-evm_5_05_01_04/linux-devkit/arm-none-linux-gnueabi/usr/include/alsa"
+配置结果无法找到alsa:
+...
+checking alsa/asoundlib.h usability... no
+checking alsa/asoundlib.h presence... no
+checking for alsa/asoundlib.h... no
+...
+
+***似乎EZSDK提供的alsa无法使用？
+***重新下载alas,配置、编码、安装后，
+./configure -prefix=/home/user/libsndfile --host=arm-linux CC=arm-none-linux-gnueabi-gcc --enable-alsa --disable-external-libs LDFLAGS="-L/home/user/alsa/lib" CPPFLAGS="-I/home/user/alsa/include"
+
+配置结果打印：
+...
+checking alsa/asoundlib.h usability... yes
+checking alsa/asoundlib.h presence... yes
+checking for alsa/asoundlib.h... yes
+...
+
+
+*下载alas（https://www.alsa-project.org/main/index.php/Main_Page）
+tar -jxvf alsa-lib-1.2.5.1.tar.bz2 
+./configure --host=arm-linux --disable-python --prefix=/home/user/alsa CC=arm-none-linux-gnueabi-gcc
+make
+make install
+
+安装alas在/home/user/alsa/下！
+】
+
+1.重新回到WaveformWidget-master/src下，修改LibWaveformWidget.pro，修改include和lib:
+
+INCLUDEPATH += /home/user/libsndfile/include
+...
+LIBS += -lsndfile \
+    -L/home/user/libsndfile/lib
+
+重新用qmake生成Makefile,make
+修改install.sh，将支持库和libsndfile库放在一起：
+#!/bin/sh
+cp build/* /home/user/libsndfile/lib/
+cp AudioUtil.h /home/user/libsndfile/include/
+cp WaveformWidget.h /home/user/libsndfile/include/
+cp MathUtil.h /home/user/libsndfile/include/
+执行./install.sh
+
+2. 完成支持库编译安装后，进入devel/src/，修改devel.pro中的支持库路径：
+INCLUDEPATH += /home/user/libsndfile/include
+...
+LIBS += -lsndfile \
+
+3. qmake生成Makefile, make生成WaveformViewerDevel
+    -L/home/user/libsndfile/lib

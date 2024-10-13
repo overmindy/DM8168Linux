@@ -1,0 +1,41 @@
+1.配置工具和qt5安装目录（注意自己的安装路径）
+
+export PATH=/home/user/arm-2014.05/bin:$PATH
+export PATH=/home/user/qt-everywhere-opensource-src-5.9.7/qtbase/bin:$PATH
+
+2.进入<QT5安装目录>，解压linux-TIarmv7-g++到<QT5安装目录>/qtbase/mkspecs/下，安装前缀-prefix可以自己选
+
+make distclean   #类似make clean，但同时也将configure生成的文件全部删除掉，包括Makefile。
+
+./configure -prefix /home/qt_arm/qt5.9.7_install -release -make libs -xplatform linux-TIarmv7-g++ -confirm-license -opensource -no-xcb -no-pch -no-iconv -nomake examples -nomake tests -no-opengl
+                 # 修改：安装目录【/home/qt_arm/，不好，需要root权限】，-no-iconv
+make
+make install (root) -> tar -cvf qt_arm_5.tar qt_arm 
+
+复制qt_arm_5.tar到8168目标板文件系统下（171MB）,xxx-rootfs/home下，并解压得到qt_arm目录！
+这时，在8168目标文件系统下可以看到/home/qt_arm/qt5.9.7_install
+
+3.在8168目标板上：
+【配置运行环境】（注意自己目板板上QT5的配置安装后的路径）
+export QTDIR=/home/qt_arm/qt5.9.7_install
+
+export QT_QPA_PLATFORM_PLUGIN_PATH=$QTDIR/plugins     可解决plugins问题
+export QML2_IMPORT_PATH=$QTDIR/qml
+
+export QT_QPA_PLATFORM=eglfs:fb=/dev/fb0
+export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0:size=640x480            可不用-platform linuxfb参数运行qt
+
+export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH  可解决无法找到 error while loading shared libraries: ibQt5Widgets.so.5
+
+export QT_QPAFONTDIR=/usr/share/fonts/truetype   
+或
+ln -s /usr/share/fonts/truetype  /home/qt_arm/qt5.9.7_install/lib/fonts    可解决找不到fonts问题,并显示字符
+
+
+4. 进入一个qt5的例程代码目录，
+qmake -makefile     生成Makefile
+make                build
+
+然后
+可以运行复制qt5例程到目标板/home/root/examples_qt5/caculate,然后运行，成功！ 但没有看到“退出” ？
+

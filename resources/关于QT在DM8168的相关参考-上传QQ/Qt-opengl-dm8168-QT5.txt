@@ -1,0 +1,347 @@
+https://www.it610.com/article/1292651648686039040.htm
+    --> Qt4和Qt5的环境变量区别（QPA和QWS）     (基础概念！)
+
+在arm板上配置Qt4应用程序的环境变量的时候，发现一般都是
+
+export QTDIR=/usr/local/qte                                                     
+export QWS_MOUSE_PROTO="tslib:/dev/input/event0"                          
+export QWS_DISPLAY="LinuxFB:mmWidth800:mmHeight480:0"                           
+export QWS_SIZE=800x480                                                         
+export QT_QWS_FONTDIR=$QTDIR/lib/fonts                                          
+export PATH=$QTDIR/bin:$PATH           
+
+而Qt5的一般都是
+
+export QT_QPA_PLATFORM_PLUGIN_PATH=$QT_ROOT/plugins/
+export QT_QPA_FONTDIR=$QT_ROOT/lib/fonts
+export QT_QPA_GENERIC_PLUGINS=tslib
+#export LD_PRELOAD=$TSLIB_ROOT/lib/libts.so
+export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0:size=800x480:offset=0x0:tty=/dev/tty1
+export QT_QPA_EVDEV_TOUCHSCREEN_PARAMETERS=/dev/input/event0:inverty
+其中就发现了一个是QWS，一个是QPA
+
+一、QPA
+
+QPA即Qt Platform Abstraction，是Qt5里面的平台抽象层，用以取代Qt for Embedded Linux以及Qt4中的平台接口。QPA插件通过定义QPlatform开头的一系列类的子类实现，其中有两个根类，QPlatformIntegration和QPlatformTheme，前者用于窗口系统的集成，后者用于更深层次的平台主题化和集成。
+
+Qt4的程序在嵌入式Linux运行时，需要加入参数“-qws”启动Qt窗口系统服务，如“./app -qws”运行app程序。从Qt5.0开始，Qt自身不再单独实现窗口系统，QWS不复存在，取而代之的新机制是QPA（Qt平台抽象），QPA使得Qt对不同平台的支持变得更加灵活，当需要支持一个新平台时，只需为该平台编写一个QPA插件。
+
+Qt5使用QPA替换Qt4的QWS，单进程跑GUI程序时QPA是个很好的选择，如果是多进程，则使用Wayland。在嵌入式Linux系统中，有许多平台插件，如EGLFS、LinuxFB、DirectFB、XCB、Wayland，具体使用哪一个，可通过配置选择，在许多板子上默认选择了eglfs，选择其它插件时可设置QT_QPA_PLATFORM环境变量或-platform命令行参数。编译源码时，需要选择或修改qtbase/mkspecs/devices目录下设备相关的编译配置文件，包括toolchain和sysroot，如果是硬件加速相关的，还需要硬件供应商特定的EGL和OpenGL ES代码，不过对于LinuxFB这种只进行软描画的情况来说是不需要硬件加速的，所谓的硬件加速就是通过GPU分担CPU的图形计算工作。
+
+这里我只介绍一个，因为我只用过这一个，LinuxFB通过Linux的fb设备节点，直接向Framebuffer写数据，只支持软描画，有些情况下显示性能会有所限制。在Qt5.9中，支持DRM dumb buffer，以取代Linux内核弃用的fb，通过DRM API进行描画，类似于eglfs_kms对eglfs的支持，提供了双缓冲、页面跳转以及vsync信号。
+
+二、QWS
+
+QWS(Qt Windows System)是QT自行开发的窗口系统，体系结构类似X Windows，是一个C/S结构，由QWS Server在物理设备上显示，由QWS Client实现界面，两者通过socket进行彼此的通讯。在很多嵌入式系统里，QT程序基本上都是用QWS来实现，这样保证程序的可移植性。另外在运行QT程序时添加-qws参数，表示这个程序时QWS Server，否则是QWS Client。任何一个基于QT的application都可以做QWS Server。当然QWS Server一定先于QWS Client启动，否则QWS Client将启动失败。在实际应用中一般会指定某个特殊的application做QWS Server，这个application一般还会管理一些其它的系统资源。
+
+QWS Server管理机制：QWS Server是一个server socket，QWS Client是一个client socket。QWS Client启动时会主动向QWS Server的server socket建立连接。而后就QWS Server通过这个socket传递QWS Command和QWS Event来管理QWS Client。
+
+######### QT5-dm8168 ###############
+https://blog.51cto.com/u_11496263/1875399
+  --> QT嵌入式平台配置
+
+如果这些工具都难看懂还有下面古老直观的办法在 mkspecs 中添加配置 https://github.com/prabindh/qt-configs/tree/master/qt5.0_mar2012
+Copy the directory linux-TIarmv7-sgx-gst-g++ into <QT5DIR>/qtbase/mkspecs/ folder.将 linux-TIarmv7-sgx-gst-g++拷贝到 mkspecs 目录下
+
+cd <QT5DIR>/qtbase/ 到源码的 qtbase 目录下 export PATH=<TOOLCHAINPATH>:$PATH 将交叉编译器加入 PATH 路径 export QTDIR=<QT5DIR> 指定环境变量 QTDIR 的正确目录路径
+
+Use the below configuration to build the configuration and generate Makefiles, then perform Make 然后 configure 配置 ./configure -prefix /home1/prabu/qt5_install -release -make libs -xplatform linux-TIarmv7-sgx-gst-g++ -opengl es2 -confirm-license -opensource -no-xcb -no-wayland -glib -gstreamer –verbose
+
+linux-TIarmv7-sgx-gst-g++目录中 qmake 的配置信息 可以参照部分看得懂的修改适合自己 开发板的
+qmake configuration for building Qt5 with arm-linux-g++ - DM3730 #
+
+******************
+1. 对照QT5的linux-TIarmv7-sgx-gst-g++或linux-arm-gnueabi-ti-g++，以及QT4的linux-TIarmv7-g++/qmake.conf。QT5的配置文件在qt5安装目录/qtbase/下，于是建立配置qtbase/linux-TIarmv7-g++/，该目录下有两个文件qmake.conf,qplatformdefs.h。
+
+2. （注意）dm8168的qt4需要加-qws运行（Qt Windows System）, qt5用的qpa，如EGLFS、LinuxFB（没有硬件加速）
+（./hello –platform linuxfb）
+
+3. 命令行：
+
+export PATH=<path to recent GCC toolchain>/bin:<qt_target_install_folder>/qtbase/bin:$PATH
+
+./configure -prefix <qt_target_install_folder> -release -make libs -xplatform linux-arm-gnueabi-ti-g++ -opengl es2 -confirm-license -opensource -icu -no-xcb -no-pch -make examples -verbose
+
+export PATH=/home/user/arm-2014.05/bin:$PATH
+export PATH=/home/user/qt-everywhere-opensource-src-5.9.7/qtbase/bin:$PATH
+
+export PATH=/home/guan/arm-2014.05/bin:$PATH
+export PATH=/home/guan/qt-everywhere-opensource-src-5.9.7/qtbase/bin:$PATH
+
+cd <QT5安装目录>
+
+./configure -prefix /home/guan/qt-everywhere-opensource-src-5.9.7 -release -make libs -xplatform linux-TIarmv7-g++ -confirm-license -opensource -no-xcb -no-pch -nomake examples -nomake tests -no-opengl
+
+                 
+《配置完成，其配置过程状态，参考qt5_configure_status.txt》
+
+4. 执行下面命令完成qt5安装
+make
+make intall  
+
+5. 进入qt例程，
+qmake -makefile
+make
+make install [将该例程文件夹复制到<qt5安装目录>/examples/]
+
+6.将qt5例程放到板子的文件系统下，运行
+root@dm816x-evm:~/mainwindow# ./mainwindow
+./mainwindow: error while loading shared libraries: libQt5Widgets.so.5: cannot open shared object file: No such file or directory
+
+将<qt5安装目录>/lib打包复制并解压到目标板的/home/root/qt5_lib   【64位的ubuntu18安装qt5】
+并在例程的pro文件，如mainwindow.pro添加：QMAKE_RPATHDIR += /home/root/qt5_lib
+再次编译后，再在8168目标板运行，提升下面错误：
+
+root@dm816x-evm:~# cd mainwindow/
+root@dm816x-evm:~/mainwindow# ./mainwindow
+./mainwindow: /lib/libc.so.6: version `GLIBC_2.17' not found (required by /home/root/qt5_lib/libQt5Core.so.5)
+./mainwindow: /lib/libc.so.6: version `GLIBC_2.9' not found (required by /home/root/qt5_lib/libQt5Core.so.5)
+
+#strings /lib/libc.so.6 | grep GLIBC 检测支持情况：
+root@dm816x-evm:~/mainwindow# strings /lib/libc.so.6 | grep GLIBC
+GLIBC_2.4
+GLIBC_2.5
+GLIBC_2.6
+GLIBC_2.7
+GLIBC_2.8
+GLIBC_PRIVATE
+
+---> 检测configure时的输出log信息，有--with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc，是否意为arm-2014.05/arm-none-linux-gnueabi/libc/lib，要复制到目标板文件系统的/opt/codesourcery/arm-none-linux-gnueabi/libc？ 
+--> Linux下指定so动态库的加载路径 (2020-12-07 15:52:58),标签： it	
+   -Wl,-rpath=linux中真实运行的路径
+所以，希望它优先使用可执行文件目录中的（dynamic）Qt库，否则使用系统的Qt库。将这行添加到.pro文件中：
+
+QMAKE_LFLAGS += '-Wl,-rpath,\'\$$ORIGIN\'' 
+
+一个qmake.conf的例子：【QMAKE的这些定义，都可以在.pro中添加！】
+# libs
+QMAKE_LIBS            = -lxml2 -lz -lts -lasound -lfreetype -lexpat \
+-lfontconfig -lpng -lpthread -Wl,-rpath-link=$${ROOTFS_PATH}/usr/lib/arm-linux-gnueabi -Wl,-rpath-link=$${ROOTFS_PATH}/usr/lib
+
+尝试复制arm-none-linux-gnueabi/libc/lib/* 到/lib下(备份原来的lib目录)，重新挂载NFS文件系统，再运行，提升错误:
+
+root@dm816x-evm:~/mainwindow# ./mainwindow
+QIconvCodec::convertToUnicode: using Latin-1 for conversion, iconv_open failed
+QIconvCodec::convertFromUnicode: using Latin-1 for conversion, iconv_open failed
+This application failed to start because it could not find or load the Qt platform plugin "xcb"
+in "".
+
+Reinstalling the application may fix this problem.
+Aborted
+root@dm816x-evm:~/mainwindow# ./mainwindow -platform linuxfb
+QIconvCodec::convertToUnicode: using Latin-1 for conversion, iconv_open failed
+QIconvCodec::convertFromUnicode: using Latin-1 for conversion, iconv_open failed
+This application failed to start because it could not find or load the Qt platform plugin "linuxfb"
+in "".
+
+Reinstalling the application may fix this problem.
+Aborted
+
+参考：下面的环境配置
+#!/bin/sh
+
+export QTDIR=/usr/lib/qt5
+
+export QT_QPA_PLATFORM_PLUGIN_PATH=$QTDIR/plugins
+export QT_QPA_PLATFORM_PLUGIN_PATH=/home/root/qt5_plugins     可解决plugins
+
+export QT_QPA_PLATFORM=eglfs:fb=/dev/fb0
+export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0                    可不用-platform linuxfb参数运行qt
+
+export QT_QPAFONTDIR=/usr/lib/fonts
+export QT_QPAFONTDIR=/home/root/qt5_lib                       没有解决下面字体问题！
+
+
+ln -s /usr/share/fonts  /home/guan/qt-everywhere-opensource-src-5.9.7/lib/fonts
+
+export LD_LIBRARY_PATH=/home/root/qt5_lib:/lib:$LD_LIBRARY_PATH  可解决无法找到 error while loading shared libraries: ibQt5Widgets.so.5
+
+
+export QT_QPA_GENERIC_PLUGINS=evdevtouch:/dev/input/event1
+export QML2_IMPORT_PATH=$QTDIR/qml
+export LD_LIBRARY_PATH=/usr/lib:/lib:$LD_LIBRARY_PATH
+export PATH=/bin:/usr/bin:/usr/bin/qt5:$PATH
+
+解决：首先将<qt5安装目录下>/plugins打包复制到目标板文件系统下，如/home/root/qt5_plugins,然后运行：
+root@dm816x-evm:~# export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0
+root@dm816x-evm:~# export QT_QPA_PLATFORM_PLUGIN_PATH=/home/root/qt5_plugins
+root@dm816x-evm:~# ./mainwindow/mainwindow
+QIconvCodec::convertToUnicode: using Latin-1 for conversion, iconv_open failed
+QIconvCodec::convertFromUnicode: using Latin-1 for conversion, iconv_open failed
+QFontDatabase: Cannot find font directory /home/guan/qt-everywhere-opensource-src-5.9.7/lib/fonts.
+Note that Qt no longer ships fonts. Deploy some (from http://dejavu-fonts.org for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/guan/qt-everywhere-opensource-src-5.9.7/lib/fonts.
+Note that Qt no longer ships fonts. Deploy some (from http://dejavu-fonts.org for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/guan/qt-everywhere-opensource-src-5.9.7/lib/fonts.
+Note that Qt no longer ships fonts. Deploy some (from http://dejavu-fonts.org for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/guan/qt-everywhere-opensource-src-5.9.7/lib/fonts.
+Note that Qt no longer ships fonts. Deploy some (from http://dejavu-fonts.org for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/guan/qt-everywhere-opensource-src-5.9.7/lib/fonts.
+Note that Qt no longer ships fonts. Deploy some (from http://dejavu-fonts.org for example) or switch to fontconfig.
+This plugin does not support setting window masks
+This plugin does not support setting window masks
+This plugin does not support setting window masks
+
+有qt5的界面显示，但没有字体显示！
+
+QIconvCodec::convertToUnicode: using Latin-1 for conversion, iconv_open failed
+QIconvCodec::convertFromUnicode: using Latin-1 for conversion, iconv_open failed
+
+
+  解决 ：下载 http://ftp.gnu.org/gnu/libiconv/libiconv-1.14.tar.gz   
+                ./configure -prefix=$PWD/_install -host=arm-linux-gnueabihf   
+                make   
+                make install 
+                把_install/lib 下的preloadable_libiconv.so 拷到系统的/system/lib 下,  
+                export LD_PRELOAD=/system/lib/preloadable_libiconv.so
+
+
+./configure -prefix /opt/qt-5.7 -release -opensource -xplatform linux-arm-gnueabi-g++ -no-opengl -skip qt3d -skip qtcanvas3d -nomake examples -skip qtdeclarative -no-icon
+
+看到这个 -no-iconv，如果没有设置它，当你运行qt程序的时候，会出现
+
+QIconvCodec::convertFromUnicode: using Latin-1 for conversion, iconv_open failed
+QIconvCodec::convertToUnicode: using Latin-1 for conversion, iconv_open failed
+
+./configure时看到这个 -no-iconv，如果没有设置它，当你运行qt程序的时候，会出现上面错误！
+所以一定要加上，如果你忘了添加，就
+  (1) 下载链接：
+      https://ftp.gnu.org/gnu/libiconv/
+  (2) 配置并安装安装
+    ./configure --prefix=/home/chy/out  --host=arm-none-linux-gnueabi-gcc
+    make
+    make install
+   (3) 复制preloadable_libiconv.so到开发板的/lib目录，并配置在/etc/profile添加export LD_PRELOAD=/lib/preloadable_libiconv.so
+
+或重新配置QT,先make clean，清除之前生成的，再make!
+
+【重新配置QT5，修改安装目录/home/qt_arm/qt5.9.7】
+
+make distclean   #类似make clean，但同时也将configure生成的文件全部删除掉，包括Makefile。
+
+./configure -prefix /home/qt_arm/qt5.9.7_install -release -make libs -xplatform linux-TIarmv7-g++ -confirm-license -opensource -no-xcb -no-pch -no-iconv -nomake examples -nomake tests -no-opengl
+                 # 修改：安装目录【/home/qt_arm/，不好，需要root权限】，-no-iconv
+make
+make install (root) -> tar -cvf qt_arm_5.tar qt_arm 
+
+复制qt_arm_5.tar到8168目标板文件系统下（171MB）,xxx-rootfs/home下，并解压得到qt_arm目录！
+这时，在8168目标文件系统下可以看到/home/qt_arm/qt5.9.7_install
+
+在8168目标板上：
+【配置运行环境】
+export QTDIR=/home/qt_arm/qt5.9.7_install
+
+export QT_QPA_PLATFORM_PLUGIN_PATH=$QTDIR/plugins     可解决plugins问题
+export QML2_IMPORT_PATH=$QTDIR/qml
+
+export QT_QPA_PLATFORM=eglfs:fb=/dev/fb0
+export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0:size=640x480            可不用-platform linuxfb参数运行qt
+
+export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH  可解决无法找到 error while loading shared libraries: ibQt5Widgets.so.5
+
+export QT_QPAFONTDIR=/usr/share/fonts/truetype   
+或
+ln -s /usr/share/fonts/truetype  /home/qt_arm/qt5.9.7_install/lib/fonts    可解决找不到fonts问题,并显示字符
+
+可以运行复制qt5例程到目标板/home/root/examples_qt5/caculate,然后运行，成功！ 但没有看到“退出” ？
+
+
+------------------下面是安装QT5的一些错误--------------------------------
+(1) ubuntu10的自带gcc版本4.3.3,qt5的configure需要C++11,需要升级gcc 4.9.4 【http://mirror.koddos.net/gcc/releases/gcc-4.9.4/】
+
+https://blog.csdn.net/weixin_39600510/article/details/116806324
+   --> Linux无网络升级gcc,linux升级gcc
+
+weixin_39600510 2021-05-08 18:50:07  38  收藏
+文章标签： Linux无网络升级gcc
+今天在编辑Mariadb的时候提示gcc版本过低
+
+1、下载gcc安装包
+
+[root@wxjtest ~]# wget -c http://mirror.koddos.net/gcc/releases/gcc-4.8.5/gcc-4.8.5.tar.bz2
+
+2、解压安装包
+
+[root@wxjtest ~]# tar xf gcc-4.8.5.tar.bz2 [root@wxjtest ~]# cd gcc-4.8.5/
+
+3、预下载依赖源码包
+
+[root@wxjtest gcc-4.8.5]# ./contrib/download_prerequisites
+
+4、配置编译文件
+
+[root@wxjtest gcc-4.8.5]# ./configure --disable-multilib --enable-languages=c,c++
+
+5、编译并安装
+
+[root@wxjtest gcc-4.8.5]# make -j4 [root@wxjtest gcc-4.8.5]# make install
+
+6、添加环境变量并生效
+
+[root@wxjtest gcc-4.8.5]# echo 'export PATH=/usr/gcc/bin:$PATH' >> /etc/profile [root@wxjtest gcc-4.8.5]# source /etc/profile
+
+7、查看 版本
+
+[root@wxjtest gcc-4.8.5]# gcc -v
+
+gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC)
+
+有些版本需要用cc来调用gcc，做软连接即可
+
+
+ ---》 configure: error: Building GCC requires GMP 4.2+, MPFR 2.4.0+ and MPC 0.8.0+.
+ 手动升级gcc，有点麻烦了。---> 考虑ubuntu 18 64位的编译qt5 ?
+
+
+(2) ERROR: Unknown command line option '-no-wayland'.  --> 去掉该选项
+
+3） sh: 1: python: not found
+Project ERROR: Building QtQml requires Python.
+Makefile:334: recipe for target 'module-qtdeclarative-make_first' failed
+make: *** [module-qtdeclarative-make_first] Error 3    ---> sudo apt install python 【2.7.17】
+    
+-----------------End 安装QT5的一些错误情况-----------------------------
+
+
+================================================================================================
+
+https://e2e.ti.com/support/processors-group/processors/f/processors-forum/615506/linux-tms320dm8148-qt-on-davinci-linux-ezsdk/2273026#2273026
+    ---> Linux/TMS320DM8148: QT on Davinci Linux EZSDK
+  There is no DM814x EZSDK that support Qt5. I think you can upgrade to Qt5. See below links for more info:
+
+https://e2e.ti.com/support/processors-group/processors/f/processors-forum/627992/linux-tms320dm8168-qt5-cross-complier-on-dm8168-am389x?tisearch=e2e-sitesearch&keymatch=qt5%2520dm816x#
+   ---> Linux的/ TMS320DM8168： Qt5 cross complier on DM8168/AM389x
+
+   qt --configs :
+
+######### opengl-dm8168#############
+
+https://e2e.ti.com/support/processors-group/processors/f/processors-forum/132525/continuing-issues-with-qt-with-opengl-support/498601?tisearch=e2e-sitesearch&keymatch=dm816x%2520opengl#498601
+
+  --> Continuing Issues with Qt with OpenGL Support
+
+--------------------------------------------------------
+运行 /usr/bin/qtopia/examples/opengl/hellogl_es2/
+   ./hellogl_es2 -qws -display powervr
+
+QEglContext::createSurface(): Unable to create EGL surface, error = 0x300b
+
+
+https://e2e.ti.com/support/processors-group/processors/f/processors-forum/147705/qt-opengl-problem-qeglcontext-createsurface-unable-to-create-egl-surface-error-0x300b?tisearch=e2e-sitesearch&keymatch=dm816x%25252520opengl#
+
+   --> Qt + opengl problem: QEglContext::createSurface(): Unable to create EGL surface, error = 0x300b
+
+Re: For the hellogl_es2, there are a number of factors that can cause it, take a look at -
+
+http://processors.wiki.ti.com/index.php/SGXDbg#Integration_of_Qt_framework_with_SGX_PowerVR_drivers_do_not_work
+
+You can use the TI ezSDK as reference to make this work: Refer below link.
+
+http://tigraphics.blogspot.com/2011/11/qt-opengles-supported-out-of-box-in-ti.html
+
+-----------------------------------------------------------------------
+https://e2e.ti.com/support/processors-group/processors/f/processors-forum/179320/provide-sgx-graphics-support-using-opengl-es-2-0-for-qt-application-on-arm-cortex-a9/663900?tisearch=e2e-sitesearch&keymatch=dm816x%252525252520opengl#663900
+
+  -->Provide SGX graphics support using OpenGL ES 2.0 for Qt application on arm cortex a9
+
+都有关于QT的./configure的配置命令，以及qmake的内容 ！
