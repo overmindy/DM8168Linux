@@ -3,13 +3,13 @@ QT的编译：
 1. 目前的虚拟机已经安装了qt 4.6.4,相应qt的安装已经完成的。
 2. 为了编译qt的例程，可以将qt目录qt-everywhere-opensource-src-4.6.4移动/home/user/workspace/下。目前生成的makefile包含的qt在改路径下
 3. 添加工具的路径PAHT, 可以先用echo $PATH等检查是否已添加：
-    export PATH=/home/user/CodeSourcery/Sourcery_G++_Lite/bin:$PATH
+    export PATH=/home/elainay/CodeSourcery/Sourcery_G++_Lite/bin:$PATH
 或  export PATH=/home/user/arm-2014.05/bin:$PATH
-    export PATH=/home/user/workspace/qt-everywhere-opensource-src-4.6.4/bin:$PATH
+    export PATH=/home/elainay/workspace/qt-everywhere-opensource-src-4.6.4/bin:$PATH
     
-    export QTDIR=/home/user/workspace/qt-everywhere-opensource-src-4.6.4
-    export QTLIB=/home/user/workspace/qt-everywhere-opensource-src-4.6.4/lib
-    export QTINC=/home/user/workspace/qt-everywhere-opensource-src-4.6.4/include
+    export QTDIR=/home/elainay/workspace/qt-everywhere-opensource-src-4.6.4
+    export QTLIB=/home/elainay/workspace/qt-everywhere-opensource-src-4.6.4/lib
+    export QTINC=/home/elainay/workspace/qt-everywhere-opensource-src-4.6.4/include
    第1个是编译工具路径，第2个是qt安装路径，后面3个有些例程要使用吧，也可以都加上。
 4. 进入例程目录，例如/home/user/workspace/qt-everywhere-opensource-src-4.6.4/examples/widgets/digitalclock
 5. 使用ls -all命令检测是否有已经编译的代码，如digitalclock可执行文件，Makefile文件，.moc、.obj、.pch三个临时目录，如下：
@@ -98,7 +98,7 @@ this library depends on
 注意，从Makefile文件可以看到，需要-I/usr/include，-lsndfile -L/usr/lib，即libsndfile的头文件存放/usr/include,库文件存放/usr/lib,以及库sndfile
 
 【下面是关于libsndfile的编译: 下载源码libsndfile-1.0.28.tar.gz
-   ./configure -prefix=/home/user/libsndfile --host=arm-linux CC=arm-none-linux-gnueabi-gcc
+   ./configure -prefix=/home/elainay/libsndfile --host=arm-linux CC=arm-none-linux-gnueabi-gcc
    make
    make install
 执行安装后，sndfile安装在/home/user/libsndfile/ !

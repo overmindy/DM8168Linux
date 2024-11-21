@@ -1,13 +1,13 @@
 1.配置工具和qt5安装目录（注意自己的安装路径）
 
-export PATH=/home/user/arm-2014.05/bin:$PATH
-export PATH=/home/user/qt-everywhere-opensource-src-5.9.7/qtbase/bin:$PATH
+export PATH=/home/elainay/arm-2014.05/bin:$PATH
+export PATH=/home/elainay/qt-everywhere-opensource-src-5.9.7/qtbase/bin:$PATH
 
 2.进入<QT5安装目录>，解压linux-TIarmv7-g++到<QT5安装目录>/qtbase/mkspecs/下，安装前缀-prefix可以自己选
 
 make distclean   #类似make clean，但同时也将configure生成的文件全部删除掉，包括Makefile。
 
-./configure -prefix /home/qt_arm/qt5.9.7_install -release -make libs -xplatform linux-TIarmv7-g++ -confirm-license -opensource -no-xcb -no-pch -no-iconv -nomake examples -nomake tests -no-opengl
+./configure -prefix /home/elainay/qt_arm/qt5.9.7_install -release -make libs -xplatform linux-TIarmv7-g++ -confirm-license -opensource -no-xcb -no-pch -no-iconv -nomake examples -nomake tests -no-opengl
                  # 修改：安装目录【/home/qt_arm/，不好，需要root权限】，-no-iconv
 make
 make install (root) -> tar -cvf qt_arm_5.tar qt_arm 

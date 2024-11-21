@@ -1,0 +1,235 @@
+    该文档包括：rpe的例程编译、运行；rpe中添加C674x核的mathlib数学运算库的例子；rpe相关基本函数简介；以及rpe中继续添加DSPlib实现FFT的例程
+============================================================
+tests.tar.gz是rpe_1_00_00_12目录中的tests目录的打包文件，该目录提供一个标准的input -> copy output的框架，打包文件利用该框架，实现128点的sqrt的测试（调用c674x的mathlib加速）！
+install.tar.gz是make rpe_install后的可执行文件，位于install/dm816x-evm/usr/share/ti/rpe下的包括DSP核固件（dm81xx_c6xdsp_debug.xe674）和ARM的应用代码（test1_a8host_debug.xv5T）。test2是多线程应用代码。
+直接测试：可以将install.tar.gz解压后的rpe目录复制到板子上或NFS网盘中，运行下面命令：
+   firmware_loader 0 dm81xx_c6xdsp_debug.xe674 start   --> 加载DSP核固件
+   ./test1_a8host_debug.xv5T                           --> 运行rpe框架调用DSP核加速！
+
+该rpe框架无需卸载其它固件，不影响显示驱动！
+
+##########################################################
+--------------------rpe1.00------------------------------
+##########################################################
+<DM816x_EZ_Software_Developers_Guide.pdf>
+
+Running the RPE examples
+To run the RPE example, follow the following steps:
+1. Go to the directory, where the RPE example and firmware binary are present.
+target # cd /usr/share/ti/rpe
+2. Load the DSP firmware binary with the codec configurations using the firmware loader.
+target # firmware_loader 0 dm81xx_c6xdsp_debug.xe674 start
+3. Run the AAC-LC decoder example with the sample media and configuration file.
+target # ./aacdec_a8host_debug.xv5T -i aacdectest.cfg
+
+---------------
+rpe_1_00_00_12\docs\rpe_1_00_00_12_user_guide.html
+
+Building RPE
+【方法1，在rpe目录下：】
+1.检查makerules/env.mk文件，该文件包含了所有的环境变量配置；
+2. 可以在rpe目录下make .show-products命令检查所有的配置； 【修改相当多的工具连接路径，未找到简单方法】
+3. make all（rpe目录）下build rpe的库、例程，产生文件将存放在lib目录下；
+4. make help产看帮助
+5. make install完成安装（安装位置依赖于DESTDIR变量定义）
+
+【方法2，在ezsdk的目录下：ezsdk的可以不用修改相关路径完成rpe组件编译】，推荐使用！
+###############################################################################
+rpe: 
+	${MAKE} -C ${RPE_INSTALL_DIR} $(RPE_BUILD_VARS) all
+
+rpe_linux:
+	${MAKE} -C ${RPE_INSTALL_DIR} $(RPE_BUILD_VARS) linuxsharedlib
+
+rpe_dsp:
+	${MAKE} -C ${RPE_INSTALL_DIR} $(RPE_BUILD_VARS) dsplib
+
+rpe_clean: 
+	${MAKE} -C ${RPE_INSTALL_DIR} $(RPE_BUILD_VARS) clean
+
+rpe_install:
+	${MAKE} -C ${RPE_INSTALL_DIR} $(RPE_BUILD_VARS) install prefix=$(EXEC_DIR)/usr
+
+rpe_show-products:
+	${MAKE} -C ${RPE_INSTALL_DIR} $(RPE_BUILD_VARS) .show-products
+
+rpe_examples:
+	${MAKE} -C ${RPE_INSTALL_DIR} $(RPE_BUILD_VARS) examples
+###############################################################################
+解释：ezsdk的Makefile定义了这些rpe相关编译选项（rpe_show-products是自己加的）。
+所以，在ezsdk目录下编译:
+make rpe_show-products    --> 对应上面【方法1】的2命令
+make rpe                  --> 对应上面【方法1】的3命令
+make rpe_help             --> 对应上面【方法1】的4命令
+make rpe_install          --> 对应上面【方法1】的5命令
+（上面rpe_install后安装文件位于/home/user/install/dm816x-evm/usr，依赖于EXEC_DIR的定义）
+另外，上面Makefile中引用的RPE_INSTALL_DIR，RPE_BUILD_VARS，EXEC_DIR，都在ezsdk目录的Rules.make中定义！
+
+6. 运行例程，
+For the AAC-LC and MP3 decoder, the sample configuration file contains the following parameters:
+Playback mode             # 0 -> write to file, 1 -> ALSA playback
+Desired channel mode      # 0 -> mono, 1 -> stereo          
+Input file name
+Output file name
+
+For the AAC-LC encoder, the configuration file contains the parameters:
+Input mode              # 0 -> File based input, 1 -> ALSA capture
+Number of Channels      # 1 -> mono, 2-> stereo
+Sample rate             # Sample rate of the input pcm file.
+Bitrate                 # Encoder bitrate
+Input file name
+Output file name
+
+7. Running Testcases：【位于rpe_1_00_00_12/tests/下，默认情况没有编译，需要enable RPE_USETESTCODEC (env.mk中)
+
+The current version of RPE comes with test cases that uses the speech copy codec to use the RPE framework. The test cases currently in the package are:
+1) Measuring the time taken for the process calls for the copy codec. The macro NUMBER_OF_TIMES is used to define the number of process calls to be made. This test case could be run by:
+
+         target # ./test1_a8host_debug.xv5T
+
+2) Running multiple threads of the RPE instances for the speech copy codec. Currently, the macro MAX_NUM_OF_THREADS is set to 8 in the code. To run the test cases use the command:
+
+         target # ./test2_a8host_debug.xv5t -n numberofthreads
+
+
+Note: By default the test cases would not be compiled in the RPE package. To compile the test cases, enable the macro RPE_USETESTCODEC in makerules/env.mk file. 
+
+注意：在ezsdk的目录下build rpe，可以不另外配置rpe的环境变量，注意修改Rules.make（ezsdk目录）中的RPE_BUILD_VARS定义：
+	RPE_USEAACDEC=0 \
+        RPE_USEAACENC=0 \
+        RPE_USEMP3DEC=0 \
+	RPE_USETESTCODEC=1\
+这时将忽略env.mk（rpe目录下makerules中）的定义！ 上面将只编译testcodec的例程！
+
+8. 添加mathlib for c674x, 用sqrt函数测试输入数据
+
+(1)添加mathlib库（首先copy库和头文件到tests/copycodec/dsplib/下）：修改examples/dm81xx/makefile以便连接生成DSP固件，如下所示：
+
+EXTLIBS_c6xdsp = $(AACDECLIBPATH)\
+                 $(AACENCLIBPATH)\
+                 $(MP3DECLIBPATH)\
+                 $(JPEGDECLIBPATH)\
+                 $(TESTCODECLIBPATH) \
+                 $(ROOTDIR)/lib/lib/c674/$(PROFILE_c6xdsp)/rpe.ae674 \
+                 $(mcutils_PATH)/lib/lib/c674/debug/ldrmemcfg.ae674 \
+		 $(ROOTDIR)/tests/copycodec/dsplib/mathlib.ae674       ----> 添加mathlib ！
+                 $(ROOTDIR)/tests/copycodec/dsplib/dsplib.ae674        ----> 添加dsplib ！
+
+(2)修改tests/copycodec/sphdec1_copy.c，添加对应的sqrt运算服务支持：
+     包含头文件：#include "dsplib/sqrtsp.h" 
+     主处理函数SPHDEC1COPY_TI_process()中，原来memcpy的位置下，修改：
+        in_ftemp = (float *)inBuf->buf;
+        out_ftemp = (float *)outBuf->buf;
+        for(i=0;i< numInBytes/4;i++)
+        {    *out_ftemp++ = sqrtsp(*in_ftemp++);  }
+
+(3)修改ARM的应用（tests/testcases/test1/test1.c），添加结果打印。在函数Speech_Decoder_example()中，
+    in_ftemp = (float *)inputData;
+    out_ftemp = (float *)outputData;
+    printf("\n--------output data number(32bit):%d\n",maxOutputBufSize/4);
+    for(i=0;i< maxOutputBufSize/4 ;i++)  
+        printf("sqrt(%f) = %f\n",*in_ftemp++,*out_ftemp++);
+
+(4)在ezsdk目录下，
+     make rpe    ---> 编译testcase例程以及DSP固件！
+或   make rpe_examples   --> 仅编译例程
+     make rpe_install   ---> 安装编译后的执行文件，/home/user/install/dm816x-evm/usr/share/ti/rpe/
+【注：2022年上课在ezsdk目录下完成rpe编译。该目录的Makefile包含Rules.make，定义了RPE_BUILD_VARS，而Makefile中，关于rpe部分，是这样写的：
+rpe: 
+	${MAKE} -C ${RPE_INSTALL_DIR} $(RPE_BUILD_VARS) all
+
+rpe_linux:
+	${MAKE} -C ${RPE_INSTALL_DIR} $(RPE_BUILD_VARS) linuxsharedlib
+
+rpe_dsp:
+	${MAKE} -C ${RPE_INSTALL_DIR} $(RPE_BUILD_VARS) dsplib
+.....
+从而进入rpe的安装目录，传递编译选项，如all,linuxsharedlib,dsplib等，通过rpe目录下的makefile完成编译！
+可以修改Makefile,根据rpe目录下makefile选项，添加对应选项到Makefile，如添加rpe_show-products,对应.show-products
+另外，Rules.make中定义了编译工具的路径，如下：
+CSTOOL_DIR=/home/user/CodeSourcery/Sourcery_G++_Lite/
+可以换成：CSTOOL_DIR=/home/user/arm-2014.05/                】
+
+(5)关于testcases中input->copy->output的标准框架中几个注意点:
+     sphdec1_copy.c （DSP核处理代码）： 
+	/* buffer definitions */     ---> 该处理代码是单buf,且bufsize为1。为了测试4个sqrt，改为16 ！
+	#define MININBUFS       1
+	#define MINOUTBUFS      1
+	#define MININBUFSIZE    1    --> 16
+	#define MINOUTBUFSIZE   1    --> 16
+    test1.c (ARM处理代码)：  单线程通过rpe调用DSP核实现加速运算！
+	通过DSP算法返回bufsize,然后分配空间！
+        参数配置完成后，通过下面代码调用rpe处理：
+	for (i = 0; i < NUMBER_OF_TIMES; i++) {
+        	inBufDesc->buf = (XDAS_Int8 *) inputData;
+        	inBufDesc->bufSize = minInputBufSize;
+
+        /*---------------------------------------------------------------*/
+        /* Process call to decode the frame */
+        /*---------------------------------------------------------------*/
+	        status = Rpe_process (processCallDesc);
+         	......
+        	}
+
+(6) 关于rpe的时间效率： 4个sqrt的计算，重复10000次，时间0.9096s （原始copy测试1个数据重复10000次，也是约0.9s）
+                       128个sqrt(512Byte),重复10000次，时间1.053878s （1.056954 2nd）
+分析：rpe框架基本0.9s/10000=90us,所以105.6us-90us=15.6us，即128点sqrt的计算时间，平均每个sqrt的技术时间120ns
+
+(7) ASLA的音频应用可以参考examples下的aacenc。注意，该目录下没有音频编码的核心算法，算法使用库的形式提供。
+
+(8)rpe.../makerules/build_config.mk, 定义了debug模式，可以修改release，启用优化开关！
+#########################################################################################################
+ rpe相关基本函数简介:  可参考rpe_1_00_00_12/docs/html/globals_func.html ！
+
+1.Rpe_acquireCallDescriptor： 设置CONTROL or PROCESS 的调用参数，用法参考如下（test1.c）:
+    在调用CONTROL之前（CONTROL是ARM APP与DSP服务直接参数控制等交互的接口）
+         status = Rpe_acquireCallDescriptor (clientHandle,
+                                        RPE_CALL_DESC_CONTROL,
+                                        &controlCallDesc,
+                                        &cmdId, &decDynParams, &decStatus);
+    然后，通过CONTROL与DSP服务进行参数交互，如：
+         *cmdId = XDM_GETBUFINFO;
+         decDynParams->size = sizeof (*decDynParams);
+         decStatus->size = sizeof (*decStatus);
+         status = Rpe_control (controlCallDesc);
+
+    上面ARM APP调用Rpe_control后，DSP端服务将执行XDM_GETBUFINFO分支（SPHDEC1COPY_TI_control函数）。通常decStatus结构体可以返回DSP端的参数，decDynParams结构体用于送往DSP端的参数。如下代码，ARM获取DSP端In、Out的buffer大小参数：
+         status->bufInfo.minInBufSize[0] = MININBUFSIZE;
+         status->bufInfo.minOutBufSize[0] = MINOUTBUFSIZE;
+    同时，control中不同cmdId将执行对应的操作。
+
+    在调用PROCESS之前，设置处理函数的输入、输出参数，如：
+         status = Rpe_acquireCallDescriptor (clientHandle,
+                                        RPE_CALL_DESC_PROCESS,
+                                        &processCallDesc,
+                                        &inBufDesc,
+                                        &outBufDesc, &decInArgs, &decOutArgs);
+    然后，ARM通过 status = Rpe_process (processCallDesc) 调用DSP服务。DSP端将执行SPHDEC1COPY_TI_process(ISPHDEC1_Handle h,XDM1_SingleBufDesc *inBuf, XDM1_SingleBufDesc *outBuf,ISPHDEC1_InArgs *inArgs, ISPHDEC1_OutArgs *outArgs)函数。其中的输入数据指针为inBufDesc，输出为outBufDesc（ARM端）。
+    
+    测试发现，Rpe_process函数中*outBuf可以带回DSP端处理结果，而*inBuf无法带回DSP的结果。就是说，inBuf只输入，outBuf为输出。*inBuf的缓冲区在DSP端是可以使用的。
+
+2.status = Rpe_create ("SPHDEC1_COPY_TI",&instAttr, &decParams, &clientHandle);
+    ARM通过create函数通知DSP核的服务执行Int SPHDEC1COPY_TI_initObj(IALG_Handle handle, const IALG_MemRec memTab[],IALG_Handle parent, const IALG_Params *algParams)函数！其中，ARM端可以使用decParams结构体传递初始化参数给DSP核。在下面的FFT例子中，将通过decParams.reserved传递FFT计算的点数，并在DSP端完成bit反转index数组的生成！
+
+####################################################################！！！跳过下面，直接看【最后】 ！
+在rpe例程中添加FFT处理代码： 代码例程在test1.c的输入数据存放产生一个sine信号，通过DSPF_sp_cfftr4_dif（时间抽取基4）实现FFT【计算数据点4，64，256，1024,...】。但该函数要求先计算旋转因子，另外，输出结果是位倒序，需要另外进行重修排序处理！
+
+所以，旋转因子计算可以在SPHDEC1COPY_TI_initObj函数中预先计算完成【通过decParams.reserved=128传递计算FFT的点数】。另外，DSPlib也提供了函数DSPF_sp_bitrev_cplx实现位倒序调整。但该函数仍然需要事先计算位反转的index数组。
+
+1. 在DSP服务端的SPHDEC1COPY_TI_initObj()执行gen_twiddle函数【蝶形结生成】,bitrev_index函数【比特位倒序】。该init函数在ARM调用Rpe_create时被执行。
+
+2. gen_twiddle中使用sin，cos函数，检测有问题【通过*outBuf带回*w指针，在ARM端打印】，更换为mathlib的函数cossp,sinsp
+
+3. 256点FFT，带功率谱计算（DSPF_sp_cfftr4_dif），计时0.223ms（0.256ms）。 使用位反转DSPLIB库，时间0.187ms 
+
+4. 128Hz采样频率，10Hz对应两个功率谱128幅度的点40/220,30Hz的两个功率谱点60/200。应该FFT计算正确，但位倒序有问题。FFT函数本身的FFT结果是混序，需要代码做位倒序处理，查这个位倒序计算，或替换为dsplib函数。
+==================================================================
+【最后，代码使用dsplib库中的DSPF_sp_fftSPxSP函数计算256点FFT，并在ARM端打印功率谱（FFT的实部平方+虚部平方再开根号。其中sqrt使用mathlib）。ARM代码生成一个采样率为128Hz，频率为30Hz的cos信号，共产生256点。这样打印的功率谱只在第60点和196点位置出现幅度为128的值，其它基本为0，与理论符合!】
+几点修改注意：
+   1. DSPF_sp_fftSPxSP函数需要预先计算蝶形结，代码在DSP服务端的SPHDEC1COPY_TI_initObj()中执行tw_gen函数完成；
+   2. DSPF_sp_fftSPxSP函数中的brev[]直接定义；
+   3. DSPF_sp_fftSPxSP函数中的rad=2或4，可以通过代码计算（源代码中直接给出），rad与FFT点数有关。
+   4. 该例程计算256点FFT耗时0.222ms左右。 
+   5. 已修改了test1.c，可以使用命令行参数输入不同的采样频率和信号频率，计算256点的功率，并打印。若不带参数，默认产生采样率为128Hz的30Hz的cos信号！ 使用方法如下：
+       ./test1_a8host_debug.xv5T [sameple_freq] [cos_frequence]
+   例如，输入 ./test1_a8host_debug.xv5T 500 100，表示采样率500Hz,COS信号为100Hz。在理论上，功率谱的最大值出现在100/(500/256)=51.2，以及-51.2。-51.2+256=204.8。所以，运行代码后，可以看打印的功率谱最大值在51和205位置上。因为是单频信号，所以只有一个峰（fs/2范围内，即0-127内）
